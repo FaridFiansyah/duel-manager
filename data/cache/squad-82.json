@@ -1,0 +1,218 @@
+[
+  {
+    "id": 398204,
+    "name": "V. DžodiÄ",
+    "age": 19,
+    "number": 50,
+    "position": "Goalkeeper",
+    "photo": "https://media.api-sports.io/football/players/398204.png"
+  },
+  {
+    "id": 633950,
+    "name": "K. Kamdem",
+    "age": 19,
+    "number": 16,
+    "position": "Goalkeeper",
+    "photo": "https://media.api-sports.io/football/players/633950.png"
+  },
+  {
+    "id": 20849,
+    "name": "M. Michel",
+    "age": 34,
+    "number": 1,
+    "position": "Goalkeeper",
+    "photo": "https://media.api-sports.io/football/players/20849.png"
+  },
+  {
+    "id": 145060,
+    "name": "S. Ngapandouetnbu",
+    "age": 22,
+    "number": 31,
+    "position": "Goalkeeper",
+    "photo": "https://media.api-sports.io/football/players/145060.png"
+  },
+  {
+    "id": 441284,
+    "name": "Naoufel El Hannach",
+    "age": 19,
+    "number": 3,
+    "position": "Defender",
+    "photo": "https://media.api-sports.io/football/players/441284.png"
+  },
+  {
+    "id": 22138,
+    "name": "C. Jullien",
+    "age": 32,
+    "number": 6,
+    "position": "Defender",
+    "photo": "https://media.api-sports.io/football/players/22138.png"
+  },
+  {
+    "id": 20766,
+    "name": "J. Laporte",
+    "age": 32,
+    "number": 15,
+    "position": "Defender",
+    "photo": "https://media.api-sports.io/football/players/20766.png"
+  },
+  {
+    "id": 333118,
+    "name": "L. Mincarelli Davin",
+    "age": 21,
+    "number": 21,
+    "position": "Defender",
+    "photo": "https://media.api-sports.io/football/players/333118.png"
+  },
+  {
+    "id": 492721,
+    "name": "I. Mohamed",
+    "age": 17,
+    "number": 19,
+    "position": "Defender",
+    "photo": "https://media.api-sports.io/football/players/492721.png"
+  },
+  {
+    "id": 350388,
+    "name": "Y. Mouanga",
+    "age": 20,
+    "number": 23,
+    "position": "Defender",
+    "photo": "https://media.api-sports.io/football/players/350388.png"
+  },
+  {
+    "id": 21434,
+    "name": "T. Sainte-Luce",
+    "age": 27,
+    "number": 17,
+    "position": "Defender",
+    "photo": "https://media.api-sports.io/football/players/21434.png"
+  },
+  {
+    "id": 179399,
+    "name": "E. Tchato",
+    "age": 23,
+    "number": 29,
+    "position": "Defender",
+    "photo": "https://media.api-sports.io/football/players/179399.png"
+  },
+  {
+    "id": 369676,
+    "name": "T. Chennahi",
+    "age": 20,
+    "number": 44,
+    "position": "Midfielder",
+    "photo": "https://media.api-sports.io/football/players/369676.png"
+  },
+  {
+    "id": 551212,
+    "name": "L. Da Silva",
+    "age": 19,
+    "number": 37,
+    "position": "Midfielder",
+    "photo": "https://media.api-sports.io/football/players/551212.png"
+  },
+  {
+    "id": 326088,
+    "name": "K. Fayad",
+    "age": 21,
+    "number": 10,
+    "position": "Midfielder",
+    "photo": "https://media.api-sports.io/football/players/326088.png"
+  },
+  {
+    "id": 639172,
+    "name": "Nabil Homssa",
+    "age": 23,
+    "number": 20,
+    "position": "Midfielder",
+    "photo": "https://media.api-sports.io/football/players/639172.png"
+  },
+  {
+    "id": 325783,
+    "name": "Everson",
+    "age": 22,
+    "number": 77,
+    "position": "Midfielder",
+    "photo": "https://media.api-sports.io/football/players/325783.png"
+  },
+  {
+    "id": 349616,
+    "name": "N. Pays",
+    "age": 22,
+    "number": 18,
+    "position": "Midfielder",
+    "photo": "https://media.api-sports.io/football/players/349616.png"
+  },
+  {
+    "id": 21443,
+    "name": "T. Savanier",
+    "age": 34,
+    "number": 11,
+    "position": "Midfielder",
+    "photo": "https://media.api-sports.io/football/players/21443.png"
+  },
+  {
+    "id": 352999,
+    "name": "A. Sishuba",
+    "age": 20,
+    "number": 28,
+    "position": "Midfielder",
+    "photo": "https://media.api-sports.io/football/players/352999.png"
+  },
+  {
+    "id": 629797,
+    "name": "N. Vidal-Cartoux",
+    "age": 17,
+    "number": 40,
+    "position": "Midfielder",
+    "photo": "https://media.api-sports.io/football/players/629797.png"
+  },
+  {
+    "id": 355076,
+    "name": "A. Gueguin",
+    "age": 20,
+    "number": 22,
+    "position": "Attacker",
+    "photo": "https://media.api-sports.io/football/players/355076.png"
+  },
+  {
+    "id": 395760,
+    "name": "Y. Issoufou",
+    "age": 19,
+    "number": 8,
+    "position": "Attacker",
+    "photo": "https://media.api-sports.io/football/players/395760.png"
+  },
+  {
+    "id": 129670,
+    "name": "N. Mbuku",
+    "age": 23,
+    "number": 7,
+    "position": "Attacker",
+    "photo": "https://media.api-sports.io/football/players/129670.png"
+  },
+  {
+    "id": 21506,
+    "name": "Alexandre Mendy",
+    "age": 31,
+    "number": 19,
+    "position": "Attacker",
+    "photo": "https://media.api-sports.io/football/players/21506.png"
+  },
+  {
+    "id": 471106,
+    "name": "E. Molébé",
+    "age": 18,
+    "number": 14,
+    "position": "Attacker",
+    "photo": "https://media.api-sports.io/football/players/471106.png"
+  },
+  {
+    "id": 630777,
+    "name": "Robin Thiland-Herard",
+    "age": 18,
+    "number": 39,
+    "position": "Attacker",
+    "photo": "https://media.api-sports.io/football/players/630777.png"
+  }
+]

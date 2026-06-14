@@ -1,0 +1,274 @@
+[
+  {
+    "id": 162453,
+    "name": "L. Chevalier",
+    "age": 24,
+    "number": 30,
+    "position": "Goalkeeper",
+    "photo": "https://media.api-sports.io/football/players/162453.png"
+  },
+  {
+    "id": 568266,
+    "name": "M. James",
+    "age": 17,
+    "number": 60,
+    "position": "Goalkeeper",
+    "photo": "https://media.api-sports.io/football/players/568266.png"
+  },
+  {
+    "id": 659070,
+    "name": "B. Laurendon",
+    "age": 20,
+    "number": 80,
+    "position": "Goalkeeper",
+    "photo": "https://media.api-sports.io/football/players/659070.png"
+  },
+  {
+    "id": 437099,
+    "name": "Renato Bellucci",
+    "age": 19,
+    "number": 89,
+    "position": "Goalkeeper",
+    "photo": "https://media.api-sports.io/football/players/437099.png"
+  },
+  {
+    "id": 2068,
+    "name": "M. Safonov",
+    "age": 26,
+    "number": 39,
+    "position": "Goalkeeper",
+    "photo": "https://media.api-sports.io/football/players/2068.png"
+  },
+  {
+    "id": 568273,
+    "name": "A. Vignaud",
+    "age": 18,
+    "number": 70,
+    "position": "Goalkeeper",
+    "photo": "https://media.api-sports.io/football/players/568273.png"
+  },
+  {
+    "id": 307835,
+    "name": "Beraldo",
+    "age": 22,
+    "number": 4,
+    "position": "Defender",
+    "photo": "https://media.api-sports.io/football/players/307835.png"
+  },
+  {
+    "id": 610763,
+    "name": "D. Boly",
+    "age": 16,
+    "number": 42,
+    "position": "Defender",
+    "photo": "https://media.api-sports.io/football/players/610763.png"
+  },
+  {
+    "id": 568269,
+    "name": "T. Cordier",
+    "age": 20,
+    "number": 53,
+    "position": "Defender",
+    "photo": "https://media.api-sports.io/football/players/568269.png"
+  },
+  {
+    "id": 568147,
+    "name": "S. Coulibaly",
+    "age": 18,
+    "number": 55,
+    "position": "Defender",
+    "photo": "https://media.api-sports.io/football/players/568147.png"
+  },
+  {
+    "id": 9,
+    "name": "A. Hakimi",
+    "age": 27,
+    "number": 2,
+    "position": "Defender",
+    "photo": "https://media.api-sports.io/football/players/9.png"
+  },
+  {
+    "id": 33,
+    "name": "L. Hernández",
+    "age": 29,
+    "number": 21,
+    "position": "Defender",
+    "photo": "https://media.api-sports.io/football/players/33.png"
+  },
+  {
+    "id": 568268,
+    "name": "D. Lucea",
+    "age": 19,
+    "number": 54,
+    "position": "Defender",
+    "photo": "https://media.api-sports.io/football/players/568268.png"
+  },
+  {
+    "id": 257,
+    "name": "Marquinhos",
+    "age": 31,
+    "number": 5,
+    "position": "Defender",
+    "photo": "https://media.api-sports.io/football/players/257.png"
+  },
+  {
+    "id": 263482,
+    "name": "Nuno Mendes",
+    "age": 23,
+    "number": 25,
+    "position": "Defender",
+    "photo": "https://media.api-sports.io/football/players/263482.png"
+  },
+  {
+    "id": 16367,
+    "name": "W. Pacho",
+    "age": 24,
+    "number": 51,
+    "position": "Defender",
+    "photo": "https://media.api-sports.io/football/players/16367.png"
+  },
+  {
+    "id": 161671,
+    "name": "I. Zabarnyi",
+    "age": 23,
+    "number": 6,
+    "position": "Defender",
+    "photo": "https://media.api-sports.io/football/players/161671.png"
+  },
+  {
+    "id": 491087,
+    "name": "Pedro Fernández",
+    "age": 17,
+    "number": 27,
+    "position": "Midfielder",
+    "photo": "https://media.api-sports.io/football/players/491087.png"
+  },
+  {
+    "id": 927,
+    "name": "Lee Kang-In",
+    "age": 24,
+    "number": 19,
+    "position": "Midfielder",
+    "photo": "https://media.api-sports.io/football/players/927.png"
+  },
+  {
+    "id": 409216,
+    "name": "Senny Mayulu",
+    "age": 19,
+    "number": 24,
+    "position": "Midfielder",
+    "photo": "https://media.api-sports.io/football/players/409216.png"
+  },
+  {
+    "id": 335051,
+    "name": "João Neves",
+    "age": 21,
+    "number": 87,
+    "position": "Midfielder",
+    "photo": "https://media.api-sports.io/football/players/335051.png"
+  },
+  {
+    "id": 567804,
+    "name": "N. Nsoki",
+    "age": 18,
+    "number": 20,
+    "position": "Midfielder",
+    "photo": "https://media.api-sports.io/football/players/567804.png"
+  },
+  {
+    "id": 328,
+    "name": "Fabián Ruiz",
+    "age": 29,
+    "number": 8,
+    "position": "Midfielder",
+    "photo": "https://media.api-sports.io/football/players/328.png"
+  },
+  {
+    "id": 128384,
+    "name": "Vitinha",
+    "age": 25,
+    "number": 17,
+    "position": "Midfielder",
+    "photo": "https://media.api-sports.io/football/players/128384.png"
+  },
+  {
+    "id": 336657,
+    "name": "W. Zaïre-Emery",
+    "age": 19,
+    "number": 33,
+    "position": "Midfielder",
+    "photo": "https://media.api-sports.io/football/players/336657.png"
+  },
+  {
+    "id": 161904,
+    "name": "B. Barcola",
+    "age": 23,
+    "number": 29,
+    "position": "Attacker",
+    "photo": "https://media.api-sports.io/football/players/161904.png"
+  },
+  {
+    "id": 153,
+    "name": "O. Dembélé",
+    "age": 28,
+    "number": 10,
+    "position": "Attacker",
+    "photo": "https://media.api-sports.io/football/players/153.png"
+  },
+  {
+    "id": 343027,
+    "name": "D. Doué",
+    "age": 20,
+    "number": 14,
+    "position": "Attacker",
+    "photo": "https://media.api-sports.io/football/players/343027.png"
+  },
+  {
+    "id": 543469,
+    "name": "Mathis Jangeal",
+    "age": 17,
+    "number": 24,
+    "position": "Attacker",
+    "photo": "https://media.api-sports.io/football/players/543469.png"
+  },
+  {
+    "id": 483,
+    "name": "K. Kvaratskhelia",
+    "age": 24,
+    "number": 7,
+    "position": "Attacker",
+    "photo": "https://media.api-sports.io/football/players/483.png"
+  },
+  {
+    "id": 446249,
+    "name": "I. Mbaye",
+    "age": 17,
+    "number": 49,
+    "position": "Attacker",
+    "photo": "https://media.api-sports.io/football/players/446249.png"
+  },
+  {
+    "id": 567805,
+    "name": "P. Mounguengue",
+    "age": 17,
+    "number": 57,
+    "position": "Attacker",
+    "photo": "https://media.api-sports.io/football/players/567805.png"
+  },
+  {
+    "id": 471107,
+    "name": "Quentin Ndjantou Mbitcha",
+    "age": 18,
+    "number": 5,
+    "position": "Attacker",
+    "photo": "https://media.api-sports.io/football/players/471107.png"
+  },
+  {
+    "id": 41585,
+    "name": "Gonçalo Ramos",
+    "age": 24,
+    "number": 9,
+    "position": "Attacker",
+    "photo": "https://media.api-sports.io/football/players/41585.png"
+  }
+]

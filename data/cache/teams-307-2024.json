@@ -1,0 +1,362 @@
+[
+  {
+    "team": {
+      "id": 2928,
+      "name": "Al Khaleej Saihat",
+      "code": null,
+      "country": "United-Arab-Emirates",
+      "founded": 1945,
+      "national": false,
+      "logo": "https://media.api-sports.io/football/teams/2928.png"
+    },
+    "venue": {
+      "id": 1370,
+      "name": "Prince Mohamed bin Fahd Stadium",
+      "address": "Omar Ben Al-Khatab Street",
+      "city": "Dammam",
+      "capacity": 35000,
+      "surface": "artificial turf",
+      "image": "https://media.api-sports.io/football/venues/1370.png"
+    }
+  },
+  {
+    "team": {
+      "id": 2929,
+      "name": "Al-Ahli Jeddah",
+      "code": "AHL",
+      "country": "Saudi-Arabia",
+      "founded": 1937,
+      "national": false,
+      "logo": "https://media.api-sports.io/football/teams/2929.png"
+    },
+    "venue": {
+      "id": 19932,
+      "name": "Prince Abdullah al-Faisal Stadium",
+      "address": null,
+      "city": "Jeddah",
+      "capacity": 27000,
+      "surface": "grass",
+      "image": "https://media.api-sports.io/football/venues/19932.png"
+    }
+  },
+  {
+    "team": {
+      "id": 2931,
+      "name": "Al-Fateh",
+      "code": "FAT",
+      "country": "Saudi-Arabia",
+      "founded": 1958,
+      "national": false,
+      "logo": "https://media.api-sports.io/football/teams/2931.png"
+    },
+    "venue": {
+      "id": 1363,
+      "name": "Al Fateh Club Stadium",
+      "address": "Ashrofiah",
+      "city": "Al-Hasa",
+      "capacity": 27550,
+      "surface": "grass",
+      "image": "https://media.api-sports.io/football/venues/1363.png"
+    }
+  },
+  {
+    "team": {
+      "id": 2932,
+      "name": "Al-Hilal Saudi FC",
+      "code": "HIL",
+      "country": "Saudi-Arabia",
+      "founded": 1957,
+      "national": false,
+      "logo": "https://media.api-sports.io/football/teams/2932.png"
+    },
+    "venue": {
+      "id": 20744,
+      "name": "Kingdom Arena",
+      "address": "Hittin",
+      "city": "Riyadh",
+      "capacity": 26000,
+      "surface": "grass",
+      "image": "https://media.api-sports.io/football/venues/20744.png"
+    }
+  },
+  {
+    "team": {
+      "id": 2933,
+      "name": "Al-Qadisiyah FC",
+      "code": null,
+      "country": "Saudi-Arabia",
+      "founded": 1967,
+      "national": false,
+      "logo": "https://media.api-sports.io/football/teams/2933.png"
+    },
+    "venue": {
+      "id": 1376,
+      "name": "Prince Saud bin Jalawi Stadium",
+      "address": "Damman Al-Khobar Coastal Road",
+      "city": "Khobar",
+      "capacity": 20100,
+      "surface": "grass",
+      "image": "https://media.api-sports.io/football/venues/1376.png"
+    }
+  },
+  {
+    "team": {
+      "id": 2934,
+      "name": "Al-Ettifaq",
+      "code": "ETT",
+      "country": "Saudi-Arabia",
+      "founded": 1944,
+      "national": false,
+      "logo": "https://media.api-sports.io/football/teams/2934.png"
+    },
+    "venue": {
+      "id": 1370,
+      "name": "Prince Mohamed bin Fahd Stadium",
+      "address": "Omar Ben Al-Khatab Street",
+      "city": "Dammam",
+      "capacity": 35000,
+      "surface": "artificial turf",
+      "image": "https://media.api-sports.io/football/venues/1370.png"
+    }
+  },
+  {
+    "team": {
+      "id": 2935,
+      "name": "Al-Raed",
+      "code": "RAE",
+      "country": "Saudi-Arabia",
+      "founded": 1954,
+      "national": false,
+      "logo": "https://media.api-sports.io/football/teams/2935.png"
+    },
+    "venue": {
+      "id": 1377,
+      "name": "King Abdullah Sport City Stadium",
+      "address": "Ent. Ring Road (North)",
+      "city": "Buraydah (Buraidah)",
+      "capacity": 29850,
+      "surface": "grass",
+      "image": "https://media.api-sports.io/football/venues/1377.png"
+    }
+  },
+  {
+    "team": {
+      "id": 2936,
+      "name": "Al Taawon",
+      "code": null,
+      "country": "Saudi-Arabia",
+      "founded": 1956,
+      "national": false,
+      "logo": "https://media.api-sports.io/football/teams/2936.png"
+    },
+    "venue": {
+      "id": 19934,
+      "name": "Al Taawon Club Stadium",
+      "address": "Ent. Ring Road (North)",
+      "city": "Buraidah",
+      "capacity": 10000,
+      "surface": "grass",
+      "image": "https://media.api-sports.io/football/venues/19934.png"
+    }
+  },
+  {
+    "team": {
+      "id": 2937,
+      "name": "Al Wehda Club",
+      "code": "WAH",
+      "country": "Saudi-Arabia",
+      "founded": 1945,
+      "national": false,
+      "logo": "https://media.api-sports.io/football/teams/2937.png"
+    },
+    "venue": {
+      "id": 10518,
+      "name": "King Abdulaziz Sports City Stadium",
+      "address": "King Abdul Aziz Sports City, Sharayea",
+      "city": "Makkah (Mecca)",
+      "capacity": 33195,
+      "surface": "grass",
+      "image": "https://media.api-sports.io/football/venues/10518.png"
+    }
+  },
+  {
+    "team": {
+      "id": 2938,
+      "name": "Al-Ittihad FC",
+      "code": "ITT",
+      "country": "Saudi-Arabia",
+      "founded": 1927,
+      "national": false,
+      "logo": "https://media.api-sports.io/football/teams/2938.png"
+    },
+    "venue": {
+      "id": 1364,
+      "name": "King Abdullah Sports City",
+      "address": null,
+      "city": "Jeddah",
+      "capacity": 63079,
+      "surface": "grass",
+      "image": "https://media.api-sports.io/football/venues/1364.png"
+    }
+  },
+  {
+    "team": {
+      "id": 2939,
+      "name": "Al-Nassr",
+      "code": "NAS",
+      "country": "Saudi-Arabia",
+      "founded": 1955,
+      "national": false,
+      "logo": "https://media.api-sports.io/football/teams/2939.png"
+    },
+    "venue": {
+      "id": 19933,
+      "name": "Al Awal Park at King Saud University",
+      "address": "Ash Shaikh Hasan Ibn Abdullah Al Ash Shaikh, King Saud University",
+      "city": "Riyadh",
+      "capacity": 25000,
+      "surface": "grass",
+      "image": "https://media.api-sports.io/football/venues/19933.png"
+    }
+  },
+  {
+    "team": {
+      "id": 2940,
+      "name": "Al Shabab",
+      "code": "SHA",
+      "country": "Saudi-Arabia",
+      "founded": 1947,
+      "national": false,
+      "logo": "https://media.api-sports.io/football/teams/2940.png"
+    },
+    "venue": {
+      "id": 1374,
+      "name": "SHG Arena",
+      "address": "King Fahad Branch Road",
+      "city": "Riyadh",
+      "capacity": 15000,
+      "surface": "artificial turf",
+      "image": "https://media.api-sports.io/football/venues/1374.png"
+    }
+  },
+  {
+    "team": {
+      "id": 2944,
+      "name": "Al-Fayha",
+      "code": null,
+      "country": "Saudi-Arabia",
+      "founded": null,
+      "national": false,
+      "logo": "https://media.api-sports.io/football/teams/2944.png"
+    },
+    "venue": {
+      "id": 1367,
+      "name": "Al Majma'ah Sports City Stadium",
+      "address": null,
+      "city": "Al Majma&apos;ah",
+      "capacity": 7000,
+      "surface": "artificial turf",
+      "image": "https://media.api-sports.io/football/venues/1367.png"
+    }
+  },
+  {
+    "team": {
+      "id": 2956,
+      "name": "Damac",
+      "code": null,
+      "country": "Saudi-Arabia",
+      "founded": 1970,
+      "national": false,
+      "logo": "https://media.api-sports.io/football/teams/2956.png"
+    },
+    "venue": {
+      "id": 19935,
+      "name": "Dhamak Club Stadium",
+      "address": "6938 Ash Shiykh Saed Ibn Mushayt, Damak",
+      "city": "Khamis Mushait",
+      "capacity": 3646,
+      "surface": "grass",
+      "image": "https://media.api-sports.io/football/venues/19935.png"
+    }
+  },
+  {
+    "team": {
+      "id": 2961,
+      "name": "Al Orubah",
+      "code": null,
+      "country": "Saudi-Arabia",
+      "founded": 1975,
+      "national": false,
+      "logo": "https://media.api-sports.io/football/teams/2961.png"
+    },
+    "venue": {
+      "id": 22661,
+      "name": "Al-Jouf University Stadium",
+      "address": null,
+      "city": "Sakākā (Sakakah)",
+      "capacity": 15000,
+      "surface": "artificial turf",
+      "image": "https://media.api-sports.io/football/venues/22661.png"
+    }
+  },
+  {
+    "team": {
+      "id": 2977,
+      "name": "Al Okhdood",
+      "code": null,
+      "country": "Saudi-Arabia",
+      "founded": 1976,
+      "national": false,
+      "logo": "https://media.api-sports.io/football/teams/2977.png"
+    },
+    "venue": {
+      "id": 12238,
+      "name": "Prince Hathloul Bin Abdul Aziz Sport City Stadium",
+      "address": "University",
+      "city": "Najran",
+      "capacity": 10000,
+      "surface": "grass",
+      "image": "https://media.api-sports.io/football/venues/12238.png"
+    }
+  },
+  {
+    "team": {
+      "id": 10509,
+      "name": "Al Kholood",
+      "code": null,
+      "country": "Saudi-Arabia",
+      "founded": 1970,
+      "national": false,
+      "logo": "https://media.api-sports.io/football/teams/10509.png"
+    },
+    "venue": {
+      "id": 1368,
+      "name": "Ar-Rass Stadium (Al Hazm Club Stadium)",
+      "address": null,
+      "city": "Rass",
+      "capacity": 8000,
+      "surface": "grass",
+      "image": "https://media.api-sports.io/football/venues/1368.png"
+    }
+  },
+  {
+    "team": {
+      "id": 10511,
+      "name": "Al Riyadh",
+      "code": "RIY",
+      "country": "Saudi-Arabia",
+      "founded": 1954,
+      "national": false,
+      "logo": "https://media.api-sports.io/football/teams/10511.png"
+    },
+    "venue": {
+      "id": 1374,
+      "name": "Prince Faisal bin Fahd Stadium",
+      "address": "Salah Ad Din Al Ayyubi Road, Al-Malaz",
+      "city": "Riyadh",
+      "capacity": 28000,
+      "surface": "grass",
+      "image": "https://media.api-sports.io/football/venues/1374.png"
+    }
+  }
+]

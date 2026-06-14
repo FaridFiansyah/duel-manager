@@ -1,0 +1,218 @@
+[
+  {
+    "id": 25113,
+    "name": "T. Boss",
+    "age": 32,
+    "number": 28,
+    "position": "Goalkeeper",
+    "photo": "https://media.api-sports.io/football/players/25113.png"
+  },
+  {
+    "id": 178194,
+    "name": "N. Kristof",
+    "age": 26,
+    "number": 20,
+    "position": "Goalkeeper",
+    "photo": "https://media.api-sports.io/football/players/178194.png"
+  },
+  {
+    "id": 25697,
+    "name": "F. Lehmann",
+    "age": 36,
+    "number": 1,
+    "position": "Goalkeeper",
+    "photo": "https://media.api-sports.io/football/players/25697.png"
+  },
+  {
+    "id": 162079,
+    "name": "L. Günther",
+    "age": 22,
+    "number": 21,
+    "position": "Defender",
+    "photo": "https://media.api-sports.io/football/players/162079.png"
+  },
+  {
+    "id": 25063,
+    "name": "J. Gyamerah",
+    "age": 30,
+    "number": 30,
+    "position": "Defender",
+    "photo": "https://media.api-sports.io/football/players/25063.png"
+  },
+  {
+    "id": 21333,
+    "name": "F. Le Joncour",
+    "age": 30,
+    "number": 3,
+    "position": "Defender",
+    "photo": "https://media.api-sports.io/football/players/21333.png"
+  },
+  {
+    "id": 39331,
+    "name": "N. Mickelson",
+    "age": 26,
+    "number": 2,
+    "position": "Defender",
+    "photo": "https://media.api-sports.io/football/players/39331.png"
+  },
+  {
+    "id": 177731,
+    "name": "L. Pinckert",
+    "age": 25,
+    "number": 19,
+    "position": "Defender",
+    "photo": "https://media.api-sports.io/football/players/177731.png"
+  },
+  {
+    "id": 126951,
+    "name": "M. Rohr",
+    "age": 30,
+    "number": 31,
+    "position": "Defender",
+    "photo": "https://media.api-sports.io/football/players/126951.png"
+  },
+  {
+    "id": 583807,
+    "name": "L. Seifert",
+    "age": 21,
+    "number": 4,
+    "position": "Defender",
+    "photo": "https://media.api-sports.io/football/players/583807.png"
+  },
+  {
+    "id": 25820,
+    "name": "C. Sickinger",
+    "age": 28,
+    "number": 23,
+    "position": "Defender",
+    "photo": "https://media.api-sports.io/football/players/25820.png"
+  },
+  {
+    "id": 554307,
+    "name": "R. Adam",
+    "age": null,
+    "number": 15,
+    "position": "Midfielder",
+    "photo": "https://media.api-sports.io/football/players/554307.png"
+  },
+  {
+    "id": 90695,
+    "name": "A. Condé",
+    "age": 28,
+    "number": 6,
+    "position": "Midfielder",
+    "photo": "https://media.api-sports.io/football/players/90695.png"
+  },
+  {
+    "id": 280070,
+    "name": "F. Keidel",
+    "age": 22,
+    "number": 43,
+    "position": "Midfielder",
+    "photo": "https://media.api-sports.io/football/players/280070.png"
+  },
+  {
+    "id": 394665,
+    "name": "Jarzinho Ataide Adriano de Nascimento Malanga",
+    "age": 19,
+    "number": 14,
+    "position": "Midfielder",
+    "photo": "https://media.api-sports.io/football/players/394665.png"
+  },
+  {
+    "id": 565584,
+    "name": "D. Pantschenko",
+    "age": 22,
+    "number": 32,
+    "position": "Midfielder",
+    "photo": "https://media.api-sports.io/football/players/565584.png"
+  },
+  {
+    "id": 161923,
+    "name": "I. Pherai",
+    "age": 24,
+    "number": 22,
+    "position": "Midfielder",
+    "photo": "https://media.api-sports.io/football/players/161923.png"
+  },
+  {
+    "id": 40533,
+    "name": "Ł. Poręba",
+    "age": 25,
+    "number": 8,
+    "position": "Midfielder",
+    "photo": "https://media.api-sports.io/football/players/40533.png"
+  },
+  {
+    "id": 203260,
+    "name": "F. Schmahl",
+    "age": 23,
+    "number": 17,
+    "position": "Midfielder",
+    "photo": "https://media.api-sports.io/football/players/203260.png"
+  },
+  {
+    "id": 177362,
+    "name": "T. Zimmerschied",
+    "age": 27,
+    "number": 29,
+    "position": "Midfielder",
+    "photo": "https://media.api-sports.io/football/players/177362.png"
+  },
+  {
+    "id": 279905,
+    "name": "B. Conté",
+    "age": 22,
+    "number": 10,
+    "position": "Attacker",
+    "photo": "https://media.api-sports.io/football/players/279905.png"
+  },
+  {
+    "id": 25708,
+    "name": "M. Feil",
+    "age": 31,
+    "number": 7,
+    "position": "Attacker",
+    "photo": "https://media.api-sports.io/football/players/25708.png"
+  },
+  {
+    "id": 380565,
+    "name": "Mohammad Mahmoud",
+    "age": 20,
+    "number": 34,
+    "position": "Attacker",
+    "photo": "https://media.api-sports.io/football/players/380565.png"
+  },
+  {
+    "id": 350047,
+    "name": "D. Mokwa",
+    "age": 21,
+    "number": 42,
+    "position": "Attacker",
+    "photo": "https://media.api-sports.io/football/players/350047.png"
+  },
+  {
+    "id": 177452,
+    "name": "L. Petkov",
+    "age": 25,
+    "number": 25,
+    "position": "Attacker",
+    "photo": "https://media.api-sports.io/football/players/177452.png"
+  },
+  {
+    "id": 26342,
+    "name": "L. Pfeiffer",
+    "age": 29,
+    "number": 16,
+    "position": "Attacker",
+    "photo": "https://media.api-sports.io/football/players/26342.png"
+  },
+  {
+    "id": 26642,
+    "name": "L. Schnellbacher",
+    "age": 31,
+    "number": 24,
+    "position": "Attacker",
+    "photo": "https://media.api-sports.io/football/players/26642.png"
+  }
+]
