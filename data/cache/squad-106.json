@@ -1,0 +1,202 @@
+[
+  {
+    "id": 21248,
+    "name": "G. Coudert",
+    "age": 26,
+    "number": 30,
+    "position": "Goalkeeper",
+    "photo": "https://media.api-sports.io/football/players/21248.png"
+  },
+  {
+    "id": 348052,
+    "name": "N. Jauny",
+    "age": 21,
+    "number": 50,
+    "position": "Goalkeeper",
+    "photo": "https://media.api-sports.io/football/players/348052.png"
+  },
+  {
+    "id": 40384,
+    "name": "R. Majecki",
+    "age": 26,
+    "number": 1,
+    "position": "Goalkeeper",
+    "photo": "https://media.api-sports.io/football/players/40384.png"
+  },
+  {
+    "id": 20546,
+    "name": "B. Chardonnet",
+    "age": 31,
+    "number": 5,
+    "position": "Defender",
+    "photo": "https://media.api-sports.io/football/players/20546.png"
+  },
+  {
+    "id": 162568,
+    "name": "S. Coulibaly",
+    "age": 22,
+    "number": 44,
+    "position": "Defender",
+    "photo": "https://media.api-sports.io/football/players/162568.png"
+  },
+  {
+    "id": 365742,
+    "name": "M. Diaz",
+    "age": 22,
+    "number": 4,
+    "position": "Defender",
+    "photo": "https://media.api-sports.io/football/players/365742.png"
+  },
+  {
+    "id": 302868,
+    "name": "D. Guindo",
+    "age": 23,
+    "number": 27,
+    "position": "Defender",
+    "photo": "https://media.api-sports.io/football/players/302868.png"
+  },
+  {
+    "id": 22247,
+    "name": "K. Lala",
+    "age": 34,
+    "number": 77,
+    "position": "Defender",
+    "photo": "https://media.api-sports.io/football/players/22247.png"
+  },
+  {
+    "id": 498791,
+    "name": "R. Le Guen",
+    "age": 19,
+    "number": 71,
+    "position": "Defender",
+    "photo": "https://media.api-sports.io/football/players/498791.png"
+  },
+  {
+    "id": 274267,
+    "name": "B. Locko",
+    "age": 23,
+    "number": 2,
+    "position": "Defender",
+    "photo": "https://media.api-sports.io/football/players/274267.png"
+  },
+  {
+    "id": 422595,
+    "name": "L. Zogbe",
+    "age": 20,
+    "number": 12,
+    "position": "Defender",
+    "photo": "https://media.api-sports.io/football/players/422595.png"
+  },
+  {
+    "id": 128287,
+    "name": "J. Chotard",
+    "age": 24,
+    "number": 13,
+    "position": "Midfielder",
+    "photo": "https://media.api-sports.io/football/players/128287.png"
+  },
+  {
+    "id": 90594,
+    "name": "J. Dina Ebimbe",
+    "age": 25,
+    "number": 7,
+    "position": "Midfielder",
+    "photo": "https://media.api-sports.io/football/players/90594.png"
+  },
+  {
+    "id": 326068,
+    "name": "K. Doumbia",
+    "age": 22,
+    "number": 23,
+    "position": "Midfielder",
+    "photo": "https://media.api-sports.io/football/players/326068.png"
+  },
+  {
+    "id": 629780,
+    "name": "Bernard Geraux Noan Didier",
+    "age": 19,
+    "number": 19,
+    "position": "Midfielder",
+    "photo": "https://media.api-sports.io/football/players/629780.png"
+  },
+  {
+    "id": 20558,
+    "name": "H. Magnetti",
+    "age": 27,
+    "number": 8,
+    "position": "Midfielder",
+    "photo": "https://media.api-sports.io/football/players/20558.png"
+  },
+  {
+    "id": 449153,
+    "name": "H. Makalou",
+    "age": 19,
+    "number": 33,
+    "position": "Midfielder",
+    "photo": "https://media.api-sports.io/football/players/449153.png"
+  },
+  {
+    "id": 664,
+    "name": "L. Tousart",
+    "age": 28,
+    "number": 24,
+    "position": "Midfielder",
+    "photo": "https://media.api-sports.io/football/players/664.png"
+  },
+  {
+    "id": 22264,
+    "name": "L. Ajorque",
+    "age": 31,
+    "number": 19,
+    "position": "Attacker",
+    "photo": "https://media.api-sports.io/football/players/22264.png"
+  },
+  {
+    "id": 41323,
+    "name": "Mama Baldé",
+    "age": 30,
+    "number": 17,
+    "position": "Attacker",
+    "photo": "https://media.api-sports.io/football/players/41323.png"
+  },
+  {
+    "id": 2214,
+    "name": "R. Del Castillo",
+    "age": 29,
+    "number": 10,
+    "position": "Attacker",
+    "photo": "https://media.api-sports.io/football/players/2214.png"
+  },
+  {
+    "id": 485957,
+    "name": "Serigne Diop",
+    "age": 20,
+    "number": 29,
+    "position": "Attacker",
+    "photo": "https://media.api-sports.io/football/players/485957.png"
+  },
+  {
+    "id": 554352,
+    "name": "Ibrahim Yayiya Kante",
+    "age": 18,
+    "number": 21,
+    "position": "Attacker",
+    "photo": "https://media.api-sports.io/football/players/554352.png"
+  },
+  {
+    "id": 326073,
+    "name": "R. Labeau Lascary",
+    "age": 22,
+    "number": 14,
+    "position": "Attacker",
+    "photo": "https://media.api-sports.io/football/players/326073.png"
+  },
+  {
+    "id": 375990,
+    "name": "P. Mboup",
+    "age": 22,
+    "number": 99,
+    "position": "Attacker",
+    "photo": "https://media.api-sports.io/football/players/375990.png"
+  }
+]

@@ -1,0 +1,234 @@
+[
+  {
+    "id": 646,
+    "name": "M. Gorgelin",
+    "age": 35,
+    "number": 16,
+    "position": "Goalkeeper",
+    "photo": "https://media.api-sports.io/football/players/646.png"
+  },
+  {
+    "id": 21378,
+    "name": "R. Gurtner",
+    "age": 39,
+    "number": 16,
+    "position": "Goalkeeper",
+    "photo": "https://media.api-sports.io/football/players/21378.png"
+  },
+  {
+    "id": 497661,
+    "name": "I. Jourdren",
+    "age": 17,
+    "number": 60,
+    "position": "Goalkeeper",
+    "photo": "https://media.api-sports.io/football/players/497661.png"
+  },
+  {
+    "id": 347211,
+    "name": "R. Risser",
+    "age": 21,
+    "number": 40,
+    "position": "Goalkeeper",
+    "photo": "https://media.api-sports.io/football/players/347211.png"
+  },
+  {
+    "id": 44594,
+    "name": "Saud Abdulhamid",
+    "age": 26,
+    "number": 23,
+    "position": "Defender",
+    "photo": "https://media.api-sports.io/football/players/44594.png"
+  },
+  {
+    "id": 21568,
+    "name": "R. Aguilar",
+    "age": 32,
+    "number": 2,
+    "position": "Defender",
+    "photo": "https://media.api-sports.io/football/players/21568.png"
+  },
+  {
+    "id": 441264,
+    "name": "K. Antonio",
+    "age": 17,
+    "number": 32,
+    "position": "Defender",
+    "photo": "https://media.api-sports.io/football/players/441264.png"
+  },
+  {
+    "id": 322984,
+    "name": "S. Baidoo",
+    "age": 21,
+    "number": 6,
+    "position": "Defender",
+    "photo": "https://media.api-sports.io/football/players/322984.png"
+  },
+  {
+    "id": 395589,
+    "name": "N. Äelik",
+    "age": 19,
+    "number": 4,
+    "position": "Defender",
+    "photo": "https://media.api-sports.io/football/players/395589.png"
+  },
+  {
+    "id": 369500,
+    "name": "I. Ganiou",
+    "age": 20,
+    "number": 25,
+    "position": "Defender",
+    "photo": "https://media.api-sports.io/football/players/369500.png"
+  },
+  {
+    "id": 441256,
+    "name": "O. Lenne",
+    "age": 19,
+    "number": 39,
+    "position": "Defender",
+    "photo": "https://media.api-sports.io/football/players/441256.png"
+  },
+  {
+    "id": 18816,
+    "name": "A. Masuaku",
+    "age": 32,
+    "number": 27,
+    "position": "Defender",
+    "photo": "https://media.api-sports.io/football/players/18816.png"
+  },
+  {
+    "id": 22166,
+    "name": "M. Sarr",
+    "age": 26,
+    "number": 20,
+    "position": "Defender",
+    "photo": "https://media.api-sports.io/football/players/22166.png"
+  },
+  {
+    "id": 20525,
+    "name": "M. Udol",
+    "age": 29,
+    "number": 14,
+    "position": "Defender",
+    "photo": "https://media.api-sports.io/football/players/20525.png"
+  },
+  {
+    "id": 394950,
+    "name": "A. Bulatović",
+    "age": 19,
+    "number": 5,
+    "position": "Midfielder",
+    "photo": "https://media.api-sports.io/football/players/394950.png"
+  },
+  {
+    "id": 1153,
+    "name": "A. Haidara",
+    "age": 27,
+    "number": 21,
+    "position": "Midfielder",
+    "photo": "https://media.api-sports.io/football/players/1153.png"
+  },
+  {
+    "id": 277306,
+    "name": "M. Sangaré",
+    "age": 23,
+    "number": 8,
+    "position": "Midfielder",
+    "photo": "https://media.api-sports.io/football/players/277306.png"
+  },
+  {
+    "id": 660571,
+    "name": "M. Soares",
+    "age": 16,
+    "number": 41,
+    "position": "Midfielder",
+    "photo": "https://media.api-sports.io/football/players/660571.png"
+  },
+  {
+    "id": 395811,
+    "name": "F. Sylla",
+    "age": 19,
+    "number": 18,
+    "position": "Midfielder",
+    "photo": "https://media.api-sports.io/football/players/395811.png"
+  },
+  {
+    "id": 22261,
+    "name": "A. Thomasson",
+    "age": 32,
+    "number": 28,
+    "position": "Midfielder",
+    "photo": "https://media.api-sports.io/football/players/22261.png"
+  },
+  {
+    "id": 402066,
+    "name": "A. Bermont",
+    "age": 20,
+    "number": 26,
+    "position": "Attacker",
+    "photo": "https://media.api-sports.io/football/players/402066.png"
+  },
+  {
+    "id": 1135,
+    "name": "O. Édouard",
+    "age": 27,
+    "number": 11,
+    "position": "Attacker",
+    "photo": "https://media.api-sports.io/football/players/1135.png"
+  },
+  {
+    "id": 443579,
+    "name": "R. Fofana",
+    "age": 19,
+    "number": 38,
+    "position": "Attacker",
+    "photo": "https://media.api-sports.io/football/players/443579.png"
+  },
+  {
+    "id": 633361,
+    "name": "Erawan Garnier",
+    "age": 20,
+    "number": 34,
+    "position": "Attacker",
+    "photo": "https://media.api-sports.io/football/players/633361.png"
+  },
+  {
+    "id": 21715,
+    "name": "W. Saïd",
+    "age": 30,
+    "number": 22,
+    "position": "Attacker",
+    "photo": "https://media.api-sports.io/football/players/21715.png"
+  },
+  {
+    "id": 22173,
+    "name": "A. Saint-Maximin",
+    "age": 28,
+    "number": 9,
+    "position": "Attacker",
+    "photo": "https://media.api-sports.io/football/players/22173.png"
+  },
+  {
+    "id": 277191,
+    "name": "A. Sima",
+    "age": 24,
+    "number": 19,
+    "position": "Attacker",
+    "photo": "https://media.api-sports.io/football/players/277191.png"
+  },
+  {
+    "id": 20761,
+    "name": "F. Sotoca",
+    "age": 35,
+    "number": 7,
+    "position": "Attacker",
+    "photo": "https://media.api-sports.io/football/players/20761.png"
+  },
+  {
+    "id": 1922,
+    "name": "F. Thauvin",
+    "age": 32,
+    "number": 10,
+    "position": "Attacker",
+    "photo": "https://media.api-sports.io/football/players/1922.png"
+  }
+]

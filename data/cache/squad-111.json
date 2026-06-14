@@ -1,0 +1,266 @@
+[
+  {
+    "id": 395808,
+    "name": "Paul Argney",
+    "age": 19,
+    "number": 50,
+    "position": "Goalkeeper",
+    "photo": "https://media.api-sports.io/football/players/395808.png"
+  },
+  {
+    "id": 119853,
+    "name": "M. Diaw",
+    "age": 32,
+    "number": 99,
+    "position": "Goalkeeper",
+    "photo": "https://media.api-sports.io/football/players/119853.png"
+  },
+  {
+    "id": 24012,
+    "name": "L. Mpasi",
+    "age": 31,
+    "number": 77,
+    "position": "Goalkeeper",
+    "photo": "https://media.api-sports.io/football/players/24012.png"
+  },
+  {
+    "id": 515772,
+    "name": "Alex Teixeira",
+    "age": 18,
+    "number": 16,
+    "position": "Goalkeeper",
+    "photo": "https://media.api-sports.io/football/players/515772.png"
+  },
+  {
+    "id": 174625,
+    "name": "F. Doucouré",
+    "age": 24,
+    "number": 13,
+    "position": "Defender",
+    "photo": "https://media.api-sports.io/football/players/174625.png"
+  },
+  {
+    "id": 355955,
+    "name": "Rory Davidson",
+    "age": 25,
+    "number": 33,
+    "position": "Defender",
+    "photo": "https://media.api-sports.io/football/players/355955.png"
+  },
+  {
+    "id": 64255,
+    "name": "G. Lloris",
+    "age": 30,
+    "number": 4,
+    "position": "Defender",
+    "photo": "https://media.api-sports.io/football/players/64255.png"
+  },
+  {
+    "id": 629834,
+    "name": "Yanis Monkolot",
+    "age": 16,
+    "number": 14,
+    "position": "Defender",
+    "photo": "https://media.api-sports.io/football/players/629834.png"
+  },
+  {
+    "id": 2336,
+    "name": "L. Négo",
+    "age": 34,
+    "number": 7,
+    "position": "Defender",
+    "photo": "https://media.api-sports.io/football/players/2336.png"
+  },
+  {
+    "id": 162067,
+    "name": "T. Pembélé",
+    "age": 23,
+    "number": 32,
+    "position": "Defender",
+    "photo": "https://media.api-sports.io/football/players/162067.png"
+  },
+  {
+    "id": 174927,
+    "name": "A. Sangante",
+    "age": 23,
+    "number": 93,
+    "position": "Defender",
+    "photo": "https://media.api-sports.io/football/players/174927.png"
+  },
+  {
+    "id": 33165,
+    "name": "A. Seko",
+    "age": 25,
+    "number": 15,
+    "position": "Defender",
+    "photo": "https://media.api-sports.io/football/players/33165.png"
+  },
+  {
+    "id": 162443,
+    "name": "É. Youté",
+    "age": 23,
+    "number": 6,
+    "position": "Defender",
+    "photo": "https://media.api-sports.io/football/players/162443.png"
+  },
+  {
+    "id": 513415,
+    "name": "Stephan Zagadou",
+    "age": 17,
+    "number": 29,
+    "position": "Defender",
+    "photo": "https://media.api-sports.io/football/players/513415.png"
+  },
+  {
+    "id": 23637,
+    "name": "Y. Zouaoui",
+    "age": 27,
+    "number": 18,
+    "position": "Defender",
+    "photo": "https://media.api-sports.io/football/players/23637.png"
+  },
+  {
+    "id": 630730,
+    "name": "Thierno Bah",
+    "age": 19,
+    "number": 38,
+    "position": "Midfielder",
+    "photo": "https://media.api-sports.io/football/players/630730.png"
+  },
+  {
+    "id": 471290,
+    "name": "A. Diabate",
+    "age": 20,
+    "number": 39,
+    "position": "Midfielder",
+    "photo": "https://media.api-sports.io/football/players/471290.png"
+  },
+  {
+    "id": 364093,
+    "name": "S. Ebonog",
+    "age": 21,
+    "number": 26,
+    "position": "Midfielder",
+    "photo": "https://media.api-sports.io/football/players/364093.png"
+  },
+  {
+    "id": 179843,
+    "name": "L. Gourna-Douath",
+    "age": 22,
+    "number": 19,
+    "position": "Midfielder",
+    "photo": "https://media.api-sports.io/football/players/179843.png"
+  },
+  {
+    "id": 174937,
+    "name": "Y. Kechta",
+    "age": 23,
+    "number": 8,
+    "position": "Midfielder",
+    "photo": "https://media.api-sports.io/football/players/174937.png"
+  },
+  {
+    "id": 145476,
+    "name": "R. Khadra",
+    "age": 24,
+    "number": 30,
+    "position": "Midfielder",
+    "photo": "https://media.api-sports.io/football/players/145476.png"
+  },
+  {
+    "id": 460805,
+    "name": "D. Mosengo",
+    "age": 19,
+    "number": 78,
+    "position": "Midfielder",
+    "photo": "https://media.api-sports.io/football/players/460805.png"
+  },
+  {
+    "id": 128342,
+    "name": "R. Ndiaye",
+    "age": 24,
+    "number": 14,
+    "position": "Midfielder",
+    "photo": "https://media.api-sports.io/football/players/128342.png"
+  },
+  {
+    "id": 630731,
+    "name": "Thomas Rousseau",
+    "age": 17,
+    "number": 37,
+    "position": "Midfielder",
+    "photo": "https://media.api-sports.io/football/players/630731.png"
+  },
+  {
+    "id": 630733,
+    "name": "Yanis Beau Djellel",
+    "age": 20,
+    "number": 33,
+    "position": "Attacker",
+    "photo": "https://media.api-sports.io/football/players/630733.png"
+  },
+  {
+    "id": 2710,
+    "name": "S. Boufal",
+    "age": 32,
+    "number": 17,
+    "position": "Attacker",
+    "photo": "https://media.api-sports.io/football/players/2710.png"
+  },
+  {
+    "id": 21641,
+    "name": "G. Kyeremeh",
+    "age": 25,
+    "number": 11,
+    "position": "Attacker",
+    "photo": "https://media.api-sports.io/football/players/21641.png"
+  },
+  {
+    "id": 961,
+    "name": "F. Mambimbi",
+    "age": 24,
+    "number": 10,
+    "position": "Attacker",
+    "photo": "https://media.api-sports.io/football/players/961.png"
+  },
+  {
+    "id": 437529,
+    "name": "N. Obougoujacquet",
+    "age": 18,
+    "number": 20,
+    "position": "Attacker",
+    "photo": "https://media.api-sports.io/football/players/437529.png"
+  },
+  {
+    "id": 584356,
+    "name": "K. Quetant",
+    "age": 19,
+    "number": 33,
+    "position": "Attacker",
+    "photo": "https://media.api-sports.io/football/players/584356.png"
+  },
+  {
+    "id": 1945,
+    "name": "M. Samatta",
+    "age": 33,
+    "number": 25,
+    "position": "Attacker",
+    "photo": "https://media.api-sports.io/football/players/1945.png"
+  },
+  {
+    "id": 156465,
+    "name": "I. Soumaré",
+    "age": 25,
+    "number": 45,
+    "position": "Attacker",
+    "photo": "https://media.api-sports.io/football/players/156465.png"
+  },
+  {
+    "id": 437349,
+    "name": "E. Koffi Vinette",
+    "age": 19,
+    "number": 27,
+    "position": "Attacker",
+    "photo": "https://media.api-sports.io/football/players/437349.png"
+  }
+]
