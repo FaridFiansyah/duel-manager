@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="id">
+
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -7,13 +8,13 @@
   <link href="https://fonts.googleapis.com/css2?family=Rye&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
   <div class="shell">
     <header class="hero">
       <div>
         <p class="eyebrow">Online 1v1 Football Draft</p>
-        <h1>Duel Manager</h1>
-        <p class="subtitle">Data pemain sudah dimuat dari snapshot. Buat room, kirim kode, draft 11v11, lalu simulasikan match.</p>
+        <h1>Footbal Manager Duel</h1>
       </div>
       <div class="hero-card">
         <span id="onlineBadge" class="badge warn">Firebase belum aktif</span>
@@ -50,10 +51,6 @@
             <div><strong id="statClubs">0</strong><span>Klub</span></div>
             <div><strong id="statSource">-</strong><span>Source</span></div>
           </div>
-          <details>
-            <summary>Kenapa tidak ada import ID lagi?</summary>
-            <p class="muted">Karena roster disimpan sebagai snapshot. Kalau mau update, jalankan seed API sekali, lalu deploy ulang. Pemain tidak perlu di-import manual saat main.</p>
-          </details>
         </div>
       </section>
 
@@ -81,7 +78,11 @@
         <section class="draft-grid">
           <aside id="teamAPanel" class="panel team-panel">
             <div class="section-head small">
-              <div><p class="eyebrow">Manager A</p><h3 id="managerAName">-</h3><p id="managerAFormation" class="muted formation-label"></p></div>
+              <div>
+                <p class="eyebrow">Manager A</p>
+                <h3 id="managerAName">-</h3>
+                <p id="managerAFormation" class="muted formation-label"></p>
+              </div>
               <span id="teamACount" class="pill">0/11</span>
             </div>
             <div id="pitchA" class="pitch"></div>
@@ -141,7 +142,11 @@
 
           <aside id="teamBPanel" class="panel team-panel">
             <div class="section-head small">
-              <div><p class="eyebrow">Manager B</p><h3 id="managerBName">-</h3><p id="managerBFormation" class="muted formation-label"></p></div>
+              <div>
+                <p class="eyebrow">Manager B</p>
+                <h3 id="managerBName">-</h3>
+                <p id="managerBFormation" class="muted formation-label"></p>
+              </div>
               <span id="teamBCount" class="pill">0/11</span>
             </div>
             <div id="pitchB" class="pitch"></div>
@@ -153,7 +158,8 @@
     <div id="formationModal" class="modal-overlay hidden">
       <div class="modal-content retro-panel">
         <h2>Pilih Formasi Tim</h2>
-        <p class="muted">Tentukan taktikmu di lapangan. Formasi ini akan menentukan slot posisi yang tersedia saat draft.</p>
+        <p class="muted">Tentukan taktikmu di lapangan. Formasi ini akan menentukan slot posisi yang tersedia saat
+          draft.</p>
         <div class="formation-options">
           <button class="formation-btn" data-fmt="4-4-2">4-4-2</button>
           <button class="formation-btn" data-fmt="4-3-3">4-3-3</button>
@@ -172,4 +178,5 @@
 
   <script type="module" src="app.js"></script>
 </body>
+
 </html>

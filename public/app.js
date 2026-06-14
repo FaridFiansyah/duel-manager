@@ -623,14 +623,19 @@ function renderTeams() {
 
   const panelA = $('teamAPanel');
   const panelB = $('teamBPanel');
+  const grid = document.querySelector('.draft-grid');
+  
+  if (grid) grid.classList.remove('draft-grid-a', 'draft-grid-b');
   
   if (!appState.offline && room.status === 'draft' && appState.seat !== 'SPECTATOR') {
     if (appState.seat === 'A') {
       panelA.style.display = 'block';
       panelB.style.display = 'none';
+      if (grid) grid.classList.add('draft-grid-a');
     } else if (appState.seat === 'B') {
       panelA.style.display = 'none';
       panelB.style.display = 'block';
+      if (grid) grid.classList.add('draft-grid-b');
     }
   } else {
     panelA.style.display = 'block';
