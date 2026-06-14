@@ -406,7 +406,9 @@ async function pickPlayer(playerId) {
     current.result = null;
     current.turn = nextTurn(current);
     
-    if (Object.keys(current.teams.A).length >= 11 && Object.keys(current.teams.B).length >= 11) {
+    const aLen = Object.values(current.teams.A).filter(Boolean).length;
+    const bLen = Object.values(current.teams.B).filter(Boolean).length;
+    if (aLen >= 11 && bLen >= 11) {
       current.status = 'ready';
     }
     current.updatedAt = Date.now();
@@ -424,18 +426,20 @@ function applyPickLocal(playerId, seat, slotIdx) {
   r.picked[playerId] = seat;
   r.result = null;
   r.turn = nextTurn(r);
-  if (Object.keys(r.teams.A).length >= 11 && Object.keys(r.teams.B).length >= 11) {
+  const aLen = Object.values(r.teams.A).filter(Boolean).length;
+  const bLen = Object.values(r.teams.B).filter(Boolean).length;
+  if (aLen >= 11 && bLen >= 11) {
     r.status = 'ready';
   }
 }
 
 function nextTurn(room) {
-  const a = Object.keys(room.teams?.A || {}).length;
-  const b = Object.keys(room.teams?.B || {}).length;
+  const a = Object.values(room.teams?.A || {}).filter(Boolean).length;
+  const b = Object.values(room.teams?.B || {}).filter(Boolean).length;
   if (a >= 11 && b >= 11) return room.turn || 'A';
   const other = room.turn === 'A' ? 'B' : 'A';
-  if (Object.keys(room.teams?.[other] || {}).length < 11) return other;
-  return Object.keys(room.teams?.A || {}).length < 11 ? 'A' : 'B';
+  if (Object.values(room.teams?.[other] || {}).filter(Boolean).length < 11) return other;
+  return Object.values(room.teams?.A || {}).filter(Boolean).length < 11 ? 'A' : 'B';
 }
 
 async function autoPick() {
