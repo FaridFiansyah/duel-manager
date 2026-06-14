@@ -1,0 +1,16 @@
+{
+  "name": "duel-manager-vercel-ready",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "npx serve public -l 3000",
+    "seed:api-football": "node scripts/seed-api-football.mjs",
+    "seed:top5": "node scripts/seed-api-football-top5.mjs",
+    "seed:leagues": "node scripts/seed-api-football-leagues.mjs",
+    "validate:data": "node scripts/validate-snapshot.mjs"
+  },
+  "devDependencies": {
+    "serve": "^14.2.4"
+  }
+}

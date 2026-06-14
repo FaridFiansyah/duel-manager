@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Duel Manager — 1v1 Online Draft</title>
+  <link href="https://fonts.googleapis.com/css2?family=Rye&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="shell">
+    <header class="hero">
+      <div>
+        <p class="eyebrow">Online 1v1 Football Draft</p>
+        <h1>Duel Manager</h1>
+        <p class="subtitle">Data pemain sudah dimuat dari snapshot. Buat room, kirim kode, draft 11v11, lalu simulasikan match.</p>
+      </div>
+      <div class="hero-card">
+        <span id="onlineBadge" class="badge warn">Firebase belum aktif</span>
+        <strong id="roomLabel">Belum masuk room</strong>
+        <small id="rosterLabel">Memuat roster...</small>
+      </div>
+    </header>
+
+    <main>
+      <section id="lobby" class="panel lobby-grid">
+        <div>
+          <p class="eyebrow">Main Online</p>
+          <h2>Buat atau Join Room</h2>
+          <label>Nama manager</label>
+          <input id="managerName" maxlength="18" placeholder="Farid FC" value="Manager" />
+          <div class="actions">
+            <button id="createRoomBtn" class="primary">Buat Room Online</button>
+            <button id="offlineBtn">Main Offline 1 Device</button>
+          </div>
+          <label>Kode room teman</label>
+          <div class="join-row">
+            <input id="joinCodeInput" maxlength="5" placeholder="ABCDE" />
+            <button id="joinRoomBtn">Join</button>
+          </div>
+          <p id="lobbyStatus" class="muted">Untuk online, isi Firebase config dulu.</p>
+        </div>
+
+        <div class="data-card">
+          <p class="eyebrow">Roster Snapshot</p>
+          <h2 id="dataTitle">Starter data</h2>
+          <p id="dataNote" class="muted">Roster akan otomatis dimuat dari <code>data/players.snapshot.json</code>.</p>
+          <div class="stats-row">
+            <div><strong id="statPlayers">0</strong><span>Pemain</span></div>
+            <div><strong id="statClubs">0</strong><span>Klub</span></div>
+            <div><strong id="statSource">-</strong><span>Source</span></div>
+          </div>
+          <details>
+            <summary>Kenapa tidak ada import ID lagi?</summary>
+            <p class="muted">Karena roster disimpan sebagai snapshot. Kalau mau update, jalankan seed API sekali, lalu deploy ulang. Pemain tidak perlu di-import manual saat main.</p>
+          </details>
+        </div>
+      </section>
+
+      <section id="roomView" class="hidden">
+        <div class="panel room-bar">
+          <div>
+            <p class="eyebrow">Room Code</p>
+            <h2 id="codeText">-----</h2>
+          </div>
+          <div>
+            <p class="eyebrow">Kamu</p>
+            <h2 id="seatText">-</h2>
+          </div>
+          <div>
+            <p class="eyebrow">Status</p>
+            <h2 id="statusText">Lobby</h2>
+          </div>
+          <div class="actions compact">
+            <button id="copyCodeBtn">Copy Code</button>
+            <button id="startDraftBtn" class="primary">Start Draft</button>
+            <button id="leaveRoomBtn" class="danger">Keluar</button>
+          </div>
+        </div>
+
+        <section class="draft-grid">
+          <aside class="panel team-panel">
+            <div class="section-head small">
+              <div><p class="eyebrow">Manager A</p><h3 id="managerAName">-</h3><p id="managerAFormation" class="muted formation-label"></p></div>
+              <span id="teamACount" class="pill">0/11</span>
+            </div>
+            <div id="pitchA" class="pitch"></div>
+          </aside>
+
+          <section class="panel draft-board">
+            <div class="section-head">
+              <div>
+                <p class="eyebrow">Draft Board</p>
+                <h2 id="turnText">Menunggu room...</h2>
+              </div>
+              <div class="actions compact">
+                <button id="autoPickBtn">Auto Pick</button>
+                <button id="simulateBtn" class="primary">Simulasi</button>
+              </div>
+            </div>
+            <div class="filters">
+              <input id="searchInput" placeholder="Cari pemain, klub, negara..." />
+              <select id="posFilter">
+                <option value="ALL">Semua posisi</option>
+                <option value="GK">GK</option>
+                <option value="DEF">DEF</option>
+                <option value="MID">MID</option>
+                <option value="FWD">FWD</option>
+              </select>
+              <select id="sortSelect">
+                <option value="rating">Rating</option>
+                <option value="name">Nama</option>
+                <option value="club">Klub</option>
+              </select>
+            </div>
+            <div id="resultBox" class="result-box hidden">
+              <h3>Live Match Center</h3>
+              <div class="scoreboard">
+                <div class="team-score">
+                  <h4 id="scoreNameA">Manager A</h4>
+                  <div id="scoreValA" class="score">0</div>
+                </div>
+                <div class="match-time">
+                  <div id="matchClock">00'</div>
+                  <div id="matchStatus">Kick Off</div>
+                </div>
+                <div class="team-score">
+                  <h4 id="scoreNameB">Manager B</h4>
+                  <div id="scoreValB" class="score">0</div>
+                </div>
+              </div>
+              <div class="match-stats">
+                <div class="stat-col"><span id="shotsA">0</span> Shots</div>
+                <div class="stat-col">Shots <span id="shotsB">0</span></div>
+              </div>
+              <div id="matchLog" class="log"></div>
+            </div>
+            <div id="renderCountInfo" class="muted" style="margin-bottom: 10px; font-family: monospace;"></div>
+            <div id="playerGrid" class="player-grid"></div>
+          </section>
+
+          <aside class="panel team-panel">
+            <div class="section-head small">
+              <div><p class="eyebrow">Manager B</p><h3 id="managerBName">-</h3><p id="managerBFormation" class="muted formation-label"></p></div>
+              <span id="teamBCount" class="pill">0/11</span>
+            </div>
+            <div id="pitchB" class="pitch"></div>
+          </aside>
+        </section>
+      </section>
+    </main>
+
+    <div id="formationModal" class="modal-overlay hidden">
+      <div class="modal-content retro-panel">
+        <h2>Pilih Formasi Tim</h2>
+        <p class="muted">Tentukan taktikmu di lapangan. Formasi ini akan menentukan slot posisi yang tersedia saat draft.</p>
+        <div class="formation-options">
+          <button class="formation-btn" data-fmt="4-4-2">4-4-2</button>
+          <button class="formation-btn" data-fmt="4-3-3">4-3-3</button>
+          <button class="formation-btn" data-fmt="3-5-2">3-5-2</button>
+          <button class="formation-btn" data-fmt="3-4-3">3-4-3</button>
+          <button class="formation-btn" data-fmt="4-2-3-1">4-2-3-1</button>
+        </div>
+        <div class="actions">
+          <button id="confirmFormationBtn" class="primary" disabled>Konfirmasi Formasi</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script type="module" src="app.js"></script>
+</body>
+</html>
