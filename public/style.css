@@ -170,6 +170,7 @@ h2 { font-size: 2rem; color: var(--accent2); }
 .slot .pos-label { font-size: 0.9rem; color: var(--accent); font-family: monospace; font-weight: bold; }
 .slot .p-name { font-size: 0.8rem; text-align: center; line-height: 1; margin-top: 2px; word-break: break-all; font-family: monospace; }
 .slot .p-rating { font-size: 1.2rem; color: var(--accent2); }
+.slot .p-rating.oop { color: #fff; background: var(--danger); padding: 0 4px; border-radius: 3px; font-size: 1rem; border: 1px solid var(--line); }
 
 /* Player Grid */
 .player-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 15px; max-height: 70vh; overflow-y: auto; padding-right: 5px; }

@@ -398,11 +398,6 @@ async function pickPlayer(playerId) {
   const formationCode = room.formations[seat];
   const requiredPos = FORMATIONS[formationCode][slotIdx].pos;
   
-  if (p.position !== requiredPos) {
-    alert(`Posisi tidak cocok! Slot ini untuk ${requiredPos}, tapi pemain ini ${p.position}.`);
-    return;
-  }
-
   if (room.teams?.[seat]?.[slotIdx]) return; // slot filled
 
   if (appState.offline) {
@@ -506,9 +501,13 @@ async function autoPick() {
   
   appState.activeSlot = `${seat}-${emptyIdx}`; // Set active slot automatically for auto pick
   
-  const available = roster
+  let available = roster
     .filter(p => !room.picked?.[p.id] && p.position === requiredPos)
     .sort((a,b) => b.rating - a.rating);
+  
+  if (!available[0]) {
+    available = roster.filter(p => !room.picked?.[p.id]).sort((a,b) => b.rating - a.rating);
+  }
     
   if (available[0]) await pickPlayer(available[0].id);
 }
@@ -516,8 +515,17 @@ async function autoPick() {
 async function simulateMatch() {
   const room = appState.room;
   if (!room) return;
-  const A = Object.values(room.teams?.A || {}).map(id => roster.find(p => p.id === id)).filter(Boolean);
-  const B = Object.values(room.teams?.B || {}).map(id => roster.find(p => p.id === id)).filter(Boolean);
+  const getTeamPlayers = (teamObj, formationCode) => {
+    const slots = FORMATIONS[formationCode];
+    return Object.entries(teamObj).map(([slotIdx, id]) => {
+      const p = roster.find(x => x.id === id);
+      if (!p) return null;
+      return { ...p, slotPos: slots[slotIdx].pos };
+    }).filter(Boolean);
+  };
+
+  const A = getTeamPlayers(room.teams?.A || {}, room.formations?.A);
+  const B = getTeamPlayers(room.teams?.B || {}, room.formations?.B);
   if (A.length < 11 || B.length < 11) { setStatus('Draft belum lengkap.'); return; }
   
   const result = generateMatchEvents(A, B, room.managers?.A || 'Manager A', room.managers?.B || 'Manager B');
@@ -540,12 +548,23 @@ function applyChemistry(team) {
     if (countries[p.country] >= 4) boost += 2;
     else if (countries[p.country] >= 2) boost += 1;
     
-    return { ...p, effRating: p.rating + boost };
+    let penalty = 0;
+    if (p.position !== p.slotPos) {
+       if (p.slotPos === 'GK' || p.position === 'GK') {
+          penalty = -25;
+       } else if ((p.slotPos === 'FWD' && p.position === 'DEF') || (p.slotPos === 'DEF' && p.position === 'FWD')) {
+          penalty = -15;
+       } else {
+          penalty = -8;
+       }
+    }
+    
+    return { ...p, effRating: p.rating + boost + penalty };
   });
 }
 
 function getLinePower(team, pos) {
-  const players = team.filter(p => p.position === pos);
+  const players = team.filter(p => p.slotPos === pos);
   if (!players.length) return 50; 
   const avg = players.reduce((s, p) => s + p.effRating, 0) / players.length;
   return avg + (players.length * 2); 
@@ -566,7 +585,7 @@ function generateMatchEvents(teamA, teamB, nameA, nameB) {
   const defA_base = getLinePower(A, 'DEF');
   const defB_base = getLinePower(B, 'DEF');
   
-  const getGk = (team) => team.find(p => p.position === 'GK') || { name: 'Kiper Darurat', effRating: 50, trait: '' };
+  const getGk = (team) => team.find(p => p.slotPos === 'GK') || { name: 'Kiper Darurat', effRating: 50, trait: '' };
   const gkA = getGk(A);
   const gkB = getGk(B);
 
@@ -606,8 +625,8 @@ function generateMatchEvents(teamA, teamB, nameA, nameB) {
     if (rollAttack <= attackChance) {
       const attackers = attackingTeam === 'A' ? A : B;
       
-      let fwds = attackers.filter(p => p.position === 'FWD');
-      if (!fwds.length) fwds = attackers.filter(p => p.position === 'MID');
+      let fwds = attackers.filter(p => p.slotPos === 'FWD');
+      if (!fwds.length) fwds = attackers.filter(p => p.slotPos === 'MID');
       if (!fwds.length) fwds = attackers;
       const shooter = fwds[Math.floor(Math.random() * fwds.length)];
       
@@ -640,7 +659,7 @@ function generateMatchEvents(teamA, teamB, nameA, nameB) {
         const penTaker = (attackingTeam === 'A' ? A : B).sort((a,b) => b.effRating - a.effRating)[0];
         const gk = attackingTeam === 'A' ? gkB : gkA;
         
-        let penChance = 75; 
+        let penChance = 85; 
         if (gk.trait === 'Penalty Saver') penChance -= 20;
         
         events.push({ min, team: attackingTeam, type: 'foul', msg: `PELANGGARAN! Penalti untuk ${attackingTeam === 'A' ? nameA : nameB}!` });
@@ -765,8 +784,9 @@ function renderPitch(seat, container, countEl) {
     
     let content = `<div class="pos-label">${s.pos}</div>`;
     if (p) {
+      const isOutOfPos = p.position !== s.pos;
       content = `
-        <div class="p-rating">${p.rating}</div>
+        <div class="p-rating ${isOutOfPos ? 'oop' : ''}">${p.rating}</div>
         <div class="p-name">${escapeHtml(p.name)}</div>
       `;
     }
