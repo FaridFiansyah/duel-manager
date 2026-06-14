@@ -1,11 +1,11 @@
 export const firebaseEnabled = true;
 
 export const firebaseConfig = {
-  apiKey: "AIza...",
-  authDomain: "nama-project.firebaseapp.com",
-  databaseURL: "https://nama-project-default-rtdb.asia-southeast1.firebasedatabase.app",
-  projectId: "nama-project",
-  storageBucket: "nama-project.appspot.com",
-  messagingSenderId: "123456789",
-  appId: "1:123456789:web:abcdef"
+  apiKey: "AIzaSyD_ouG6QtbdS2NiIeBQgpuSsTv2G-vNg2E",
+  authDomain: "duel-manager-f915f.firebaseapp.com",
+  databaseURL: "https://duel-manager-f915f-default-rtdb.firebaseio.com",
+  projectId: "duel-manager-f915f",
+  storageBucket: "duel-manager-f915f.firebasestorage.app",
+  messagingSenderId: "242957046879",
+  appId: "1:242957046879:web:d704ec457b2a19eec437ea",
 };
