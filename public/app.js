@@ -184,9 +184,17 @@ async function joinOnlineRoom() {
     const snap = await fb.get(fb.ref(fb.db, `rooms/${code}`));
     if (!snap.exists()) { setStatus('Room tidak ada.'); return; }
     const room = snap.val();
-    const seat = room.managers?.B ? 'SPECTATOR' : 'B';
+    const myName = managerName();
+    let seat = 'SPECTATOR';
+    
+    if (!room.managers?.B || room.managers.B === myName) {
+      seat = 'B';
+    } else if (room.managers.A === myName) {
+      seat = 'A';
+    }
+
     if (seat === 'B') {
-      await fb.update(fb.ref(fb.db, `rooms/${code}`), { 'managers/B': managerName(), updatedAt: Date.now() });
+      await fb.update(fb.ref(fb.db, `rooms/${code}`), { 'managers/B': myName, updatedAt: Date.now() });
     }
     enterRoom(code, seat, false);
   } catch (err) {
@@ -426,6 +434,8 @@ function applyPickLocal(playerId, seat, slotIdx) {
   r.picked[playerId] = seat;
   r.result = null;
   r.turn = nextTurn(r);
+  r.teams.A ||= {};
+  r.teams.B ||= {};
   const aLen = Object.values(r.teams.A).filter(Boolean).length;
   const bLen = Object.values(r.teams.B).filter(Boolean).length;
   if (aLen >= 11 && bLen >= 11) {
@@ -549,7 +559,7 @@ function renderHeader() {
   $('roomLabel').textContent = room ? `Room ${room.code}` : 'Belum masuk room';
   if (!room) return;
   $('codeText').textContent = room.code;
-  $('seatText').textContent = appState.offline ? 'Offline' : (appState.seat === 'SPECTATOR' ? 'Penonton' : `Manager ${appState.seat}`);
+  $('seatText').textContent = appState.offline ? 'Offline' : (appState.seat === 'SPECTATOR' ? 'Penonton (Hanya Melihat)' : `Manager ${appState.seat}`);
   
   let statusDisplay = 'Lobby';
   if (room.status === 'draft') statusDisplay = 'Draft';
