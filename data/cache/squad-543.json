@@ -1,0 +1,266 @@
+[
+  {
+    "id": 18812,
+    "name": "Adrián",
+    "age": 38,
+    "number": 13,
+    "position": "Goalkeeper",
+    "photo": "https://media.api-sports.io/football/players/18812.png"
+  },
+  {
+    "id": 1557,
+    "name": "Pau López",
+    "age": 31,
+    "number": 25,
+    "position": "Goalkeeper",
+    "photo": "https://media.api-sports.io/football/players/1557.png"
+  },
+  {
+    "id": 46990,
+    "name": "Álvaro Vallés",
+    "age": 28,
+    "number": 1,
+    "position": "Goalkeeper",
+    "photo": "https://media.api-sports.io/football/players/46990.png"
+  },
+  {
+    "id": 1561,
+    "name": "Marc Bartra",
+    "age": 35,
+    "number": 5,
+    "position": "Defender",
+    "photo": "https://media.api-sports.io/football/players/1561.png"
+  },
+  {
+    "id": 1439,
+    "name": "Héctor Bellerín",
+    "age": 30,
+    "number": 2,
+    "position": "Defender",
+    "photo": "https://media.api-sports.io/football/players/1439.png"
+  },
+  {
+    "id": 439994,
+    "name": "Pablo Busto",
+    "age": 20,
+    "number": 2,
+    "position": "Defender",
+    "photo": "https://media.api-sports.io/football/players/439994.png"
+  },
+  {
+    "id": 610742,
+    "name": "C. De Roa",
+    "age": 18,
+    "number": 33,
+    "position": "Defender",
+    "photo": "https://media.api-sports.io/football/players/610742.png"
+  },
+  {
+    "id": 1564,
+    "name": "Junior Firpo",
+    "age": 29,
+    "number": 23,
+    "position": "Defender",
+    "photo": "https://media.api-sports.io/football/players/1564.png"
+  },
+  {
+    "id": 355004,
+    "name": "V. Gómez",
+    "age": 22,
+    "number": 16,
+    "position": "Defender",
+    "photo": "https://media.api-sports.io/football/players/355004.png"
+  },
+  {
+    "id": 47302,
+    "name": "Diego Llorente",
+    "age": 32,
+    "number": 3,
+    "position": "Defender",
+    "photo": "https://media.api-sports.io/football/players/47302.png"
+  },
+  {
+    "id": 195100,
+    "name": "Natan",
+    "age": 24,
+    "number": 4,
+    "position": "Defender",
+    "photo": "https://media.api-sports.io/football/players/195100.png"
+  },
+  {
+    "id": 334574,
+    "name": "Ángel Ortiz",
+    "age": 21,
+    "number": 40,
+    "position": "Defender",
+    "photo": "https://media.api-sports.io/football/players/334574.png"
+  },
+  {
+    "id": 1631,
+    "name": "R. Rodríguez",
+    "age": 33,
+    "number": 12,
+    "position": "Defender",
+    "photo": "https://media.api-sports.io/football/players/1631.png"
+  },
+  {
+    "id": 286084,
+    "name": "Sergi Altimira",
+    "age": 24,
+    "number": 6,
+    "position": "Midfielder",
+    "photo": "https://media.api-sports.io/football/players/286084.png"
+  },
+  {
+    "id": 74,
+    "name": "S. Amrabat",
+    "age": 29,
+    "number": 14,
+    "position": "Midfielder",
+    "photo": "https://media.api-sports.io/football/players/74.png"
+  },
+  {
+    "id": 450714,
+    "name": "Ivan Corralejo",
+    "age": 18,
+    "number": 37,
+    "position": "Midfielder",
+    "photo": "https://media.api-sports.io/football/players/450714.png"
+  },
+  {
+    "id": 300885,
+    "name": "N. Deossa",
+    "age": 25,
+    "number": 18,
+    "position": "Midfielder",
+    "photo": "https://media.api-sports.io/football/players/300885.png"
+  },
+  {
+    "id": 750,
+    "name": "Álvaro Fidalgo",
+    "age": 28,
+    "number": 15,
+    "position": "Midfielder",
+    "photo": "https://media.api-sports.io/football/players/750.png"
+  },
+  {
+    "id": 1697,
+    "name": "Pablo Fornals",
+    "age": 29,
+    "number": 8,
+    "position": "Midfielder",
+    "photo": "https://media.api-sports.io/football/players/1697.png"
+  },
+  {
+    "id": 745,
+    "name": "Isco",
+    "age": 33,
+    "number": 22,
+    "position": "Midfielder",
+    "photo": "https://media.api-sports.io/football/players/745.png"
+  },
+  {
+    "id": 1578,
+    "name": "G. Lo Celso",
+    "age": 29,
+    "number": 20,
+    "position": "Midfielder",
+    "photo": "https://media.api-sports.io/football/players/1578.png"
+  },
+  {
+    "id": 351131,
+    "name": "Dani Pérez",
+    "age": 20,
+    "number": 8,
+    "position": "Midfielder",
+    "photo": "https://media.api-sports.io/football/players/351131.png"
+  },
+  {
+    "id": 47341,
+    "name": "Marc Roca",
+    "age": 29,
+    "number": 21,
+    "position": "Midfielder",
+    "photo": "https://media.api-sports.io/football/players/47341.png"
+  },
+  {
+    "id": 9971,
+    "name": "Antony",
+    "age": 25,
+    "number": 7,
+    "position": "Attacker",
+    "photo": "https://media.api-sports.io/football/players/9971.png"
+  },
+  {
+    "id": 47579,
+    "name": "E. Ávila",
+    "age": 31,
+    "number": 9,
+    "position": "Attacker",
+    "photo": "https://media.api-sports.io/football/players/47579.png"
+  },
+  {
+    "id": 3033,
+    "name": "C. Bakambu",
+    "age": 34,
+    "number": 11,
+    "position": "Attacker",
+    "photo": "https://media.api-sports.io/football/players/3033.png"
+  },
+  {
+    "id": 47582,
+    "name": "C. Hernández",
+    "age": 26,
+    "number": 19,
+    "position": "Attacker",
+    "photo": "https://media.api-sports.io/football/players/47582.png"
+  },
+  {
+    "id": 181421,
+    "name": "A. Ezzalzouli",
+    "age": 24,
+    "number": 10,
+    "position": "Attacker",
+    "photo": "https://media.api-sports.io/football/players/181421.png"
+  },
+  {
+    "id": 443163,
+    "name": "Pablo García",
+    "age": 19,
+    "number": 7,
+    "position": "Attacker",
+    "photo": "https://media.api-sports.io/football/players/443163.png"
+  },
+  {
+    "id": 548691,
+    "name": "R. Marina",
+    "age": 19,
+    "number": 17,
+    "position": "Attacker",
+    "photo": "https://media.api-sports.io/football/players/548691.png"
+  },
+  {
+    "id": 544644,
+    "name": "J. A. Morante",
+    "age": 18,
+    "number": 27,
+    "position": "Attacker",
+    "photo": "https://media.api-sports.io/football/players/544644.png"
+  },
+  {
+    "id": 136117,
+    "name": "Rodrigo Riquelme",
+    "age": 25,
+    "number": 17,
+    "position": "Attacker",
+    "photo": "https://media.api-sports.io/football/players/136117.png"
+  },
+  {
+    "id": 47119,
+    "name": "Aitor Ruibal",
+    "age": 29,
+    "number": 24,
+    "position": "Attacker",
+    "photo": "https://media.api-sports.io/football/players/47119.png"
+  }
+]

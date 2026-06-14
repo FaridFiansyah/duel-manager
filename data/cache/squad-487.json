@@ -1,0 +1,266 @@
+[
+  {
+    "id": 63934,
+    "name": "A. Furlanetto",
+    "age": 23,
+    "number": 55,
+    "position": "Goalkeeper",
+    "photo": "https://media.api-sports.io/football/players/63934.png"
+  },
+  {
+    "id": 616196,
+    "name": "Giacomo Giacomone",
+    "age": 17,
+    "number": 99,
+    "position": "Goalkeeper",
+    "photo": "https://media.api-sports.io/football/players/616196.png"
+  },
+  {
+    "id": 431413,
+    "name": "E. Motta",
+    "age": 20,
+    "number": 40,
+    "position": "Goalkeeper",
+    "photo": "https://media.api-sports.io/football/players/431413.png"
+  },
+  {
+    "id": 616197,
+    "name": "Nicolo Pannozzo",
+    "age": 17,
+    "number": 72,
+    "position": "Goalkeeper",
+    "photo": "https://media.api-sports.io/football/players/616197.png"
+  },
+  {
+    "id": 31037,
+    "name": "I. Provedel",
+    "age": 31,
+    "number": 94,
+    "position": "Goalkeeper",
+    "photo": "https://media.api-sports.io/football/players/31037.png"
+  },
+  {
+    "id": 1775,
+    "name": "S. Gigot",
+    "age": 32,
+    "number": 2,
+    "position": "Defender",
+    "photo": "https://media.api-sports.io/football/players/1775.png"
+  },
+  {
+    "id": 162952,
+    "name": "Mario Gila",
+    "age": 25,
+    "number": 34,
+    "position": "Defender",
+    "photo": "https://media.api-sports.io/football/players/162952.png"
+  },
+  {
+    "id": 317,
+    "name": "E. Hysaj",
+    "age": 31,
+    "number": 23,
+    "position": "Defender",
+    "photo": "https://media.api-sports.io/football/players/317.png"
+  },
+  {
+    "id": 1844,
+    "name": "A. Marušić",
+    "age": 33,
+    "number": 77,
+    "position": "Defender",
+    "photo": "https://media.api-sports.io/football/players/1844.png"
+  },
+  {
+    "id": 1841,
+    "name": "Patric",
+    "age": 32,
+    "number": 4,
+    "position": "Defender",
+    "photo": "https://media.api-sports.io/football/players/1841.png"
+  },
+  {
+    "id": 30554,
+    "name": "L. Pellegrini",
+    "age": 26,
+    "number": 3,
+    "position": "Defender",
+    "photo": "https://media.api-sports.io/football/players/30554.png"
+  },
+  {
+    "id": 350857,
+    "name": "O. Provstgaard",
+    "age": 22,
+    "number": 25,
+    "position": "Defender",
+    "photo": "https://media.api-sports.io/football/players/350857.png"
+  },
+  {
+    "id": 1632,
+    "name": "A. Romagnoli",
+    "age": 30,
+    "number": 13,
+    "position": "Defender",
+    "photo": "https://media.api-sports.io/football/players/1632.png"
+  },
+  {
+    "id": 41577,
+    "name": "Nuno Tavares",
+    "age": 25,
+    "number": 17,
+    "position": "Defender",
+    "photo": "https://media.api-sports.io/football/players/41577.png"
+  },
+  {
+    "id": 1266,
+    "name": "T. Bašić",
+    "age": 29,
+    "number": 26,
+    "position": "Midfielder",
+    "photo": "https://media.api-sports.io/football/players/1266.png"
+  },
+  {
+    "id": 333116,
+    "name": "R. Belahyane",
+    "age": 21,
+    "number": 21,
+    "position": "Midfielder",
+    "photo": "https://media.api-sports.io/football/players/333116.png"
+  },
+  {
+    "id": 1852,
+    "name": "D. Cataldi",
+    "age": 31,
+    "number": 32,
+    "position": "Midfielder",
+    "photo": "https://media.api-sports.io/football/players/1852.png"
+  },
+  {
+    "id": 144740,
+    "name": "F. Dele-Bashiru",
+    "age": 24,
+    "number": 7,
+    "position": "Midfielder",
+    "photo": "https://media.api-sports.io/football/players/144740.png"
+  },
+  {
+    "id": 483662,
+    "name": "V. Farcomeni",
+    "age": 19,
+    "number": 71,
+    "position": "Midfielder",
+    "photo": "https://media.api-sports.io/football/players/483662.png"
+  },
+  {
+    "id": 30866,
+    "name": "M. Lazzari",
+    "age": 32,
+    "number": 29,
+    "position": "Midfielder",
+    "photo": "https://media.api-sports.io/football/players/30866.png"
+  },
+  {
+    "id": 134926,
+    "name": "D. Maldini",
+    "age": 24,
+    "number": 27,
+    "position": "Midfielder",
+    "photo": "https://media.api-sports.io/football/players/134926.png"
+  },
+  {
+    "id": 30784,
+    "name": "N. Rovella",
+    "age": 24,
+    "number": 6,
+    "position": "Midfielder",
+    "photo": "https://media.api-sports.io/football/players/30784.png"
+  },
+  {
+    "id": 38749,
+    "name": "K. Taylor",
+    "age": 23,
+    "number": 24,
+    "position": "Midfielder",
+    "photo": "https://media.api-sports.io/football/players/38749.png"
+  },
+  {
+    "id": 30937,
+    "name": "M. Zaccagni",
+    "age": 30,
+    "number": 10,
+    "position": "Midfielder",
+    "photo": "https://media.api-sports.io/football/players/30937.png"
+  },
+  {
+    "id": 286474,
+    "name": "M. Cancellieri",
+    "age": 23,
+    "number": 22,
+    "position": "Attacker",
+    "photo": "https://media.api-sports.io/football/players/286474.png"
+  },
+  {
+    "id": 22015,
+    "name": "B. Dia",
+    "age": 29,
+    "number": 19,
+    "position": "Attacker",
+    "photo": "https://media.api-sports.io/football/players/22015.png"
+  },
+  {
+    "id": 436193,
+    "name": "S. Fernandes",
+    "age": 19,
+    "number": 77,
+    "position": "Attacker",
+    "photo": "https://media.api-sports.io/football/players/436193.png"
+  },
+  {
+    "id": 135519,
+    "name": "G. Isaksen",
+    "age": 24,
+    "number": 18,
+    "position": "Attacker",
+    "photo": "https://media.api-sports.io/football/players/135519.png"
+  },
+  {
+    "id": 133729,
+    "name": "T. Noslin",
+    "age": 26,
+    "number": 14,
+    "position": "Attacker",
+    "photo": "https://media.api-sports.io/football/players/133729.png"
+  },
+  {
+    "id": 2299,
+    "name": "Pedro",
+    "age": 38,
+    "number": 9,
+    "position": "Attacker",
+    "photo": "https://media.api-sports.io/football/players/2299.png"
+  },
+  {
+    "id": 405241,
+    "name": "A. Przyborek",
+    "age": 18,
+    "number": 28,
+    "position": "Attacker",
+    "photo": "https://media.api-sports.io/football/players/405241.png"
+  },
+  {
+    "id": 301763,
+    "name": "P. Ratkov",
+    "age": 22,
+    "number": 20,
+    "position": "Attacker",
+    "photo": "https://media.api-sports.io/football/players/301763.png"
+  },
+  {
+    "id": 436244,
+    "name": "F. Serra",
+    "age": 19,
+    "number": 63,
+    "position": "Attacker",
+    "photo": "https://media.api-sports.io/football/players/436244.png"
+  }
+]

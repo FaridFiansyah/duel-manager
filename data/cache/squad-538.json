@@ -1,0 +1,258 @@
+[
+  {
+    "id": 30765,
+    "name": "I. Radu",
+    "age": 28,
+    "number": 13,
+    "position": "Goalkeeper",
+    "photo": "https://media.api-sports.io/football/players/30765.png"
+  },
+  {
+    "id": 182730,
+    "name": "Marc Vidal",
+    "age": 25,
+    "number": 25,
+    "position": "Goalkeeper",
+    "photo": "https://media.api-sports.io/football/players/182730.png"
+  },
+  {
+    "id": 47427,
+    "name": "Iván Villar",
+    "age": 28,
+    "number": 1,
+    "position": "Goalkeeper",
+    "photo": "https://media.api-sports.io/football/players/47427.png"
+  },
+  {
+    "id": 1926,
+    "name": "J. Aidoo",
+    "age": 30,
+    "number": 4,
+    "position": "Defender",
+    "photo": "https://media.api-sports.io/football/players/1926.png"
+  },
+  {
+    "id": 2278,
+    "name": "Marcos Alonso",
+    "age": 35,
+    "number": 20,
+    "position": "Defender",
+    "photo": "https://media.api-sports.io/football/players/2278.png"
+  },
+  {
+    "id": 157988,
+    "name": "Sergio Carreira",
+    "age": 25,
+    "number": 5,
+    "position": "Defender",
+    "photo": "https://media.api-sports.io/football/players/157988.png"
+  },
+  {
+    "id": 286559,
+    "name": "Carlos Domínguez",
+    "age": 24,
+    "number": 24,
+    "position": "Defender",
+    "photo": "https://media.api-sports.io/football/players/286559.png"
+  },
+  {
+    "id": 329722,
+    "name": "Yoel Lago",
+    "age": 21,
+    "number": 29,
+    "position": "Defender",
+    "photo": "https://media.api-sports.io/football/players/329722.png"
+  },
+  {
+    "id": 162712,
+    "name": "Óscar Mingueza",
+    "age": 26,
+    "number": 3,
+    "position": "Defender",
+    "photo": "https://media.api-sports.io/football/players/162712.png"
+  },
+  {
+    "id": 182661,
+    "name": "Álvaro Núñez",
+    "age": 25,
+    "number": 14,
+    "position": "Defender",
+    "photo": "https://media.api-sports.io/football/players/182661.png"
+  },
+  {
+    "id": 21584,
+    "name": "M. Ristić",
+    "age": 30,
+    "number": 21,
+    "position": "Defender",
+    "photo": "https://media.api-sports.io/football/players/21584.png"
+  },
+  {
+    "id": 384135,
+    "name": "Javi Rodríguez",
+    "age": 22,
+    "number": 32,
+    "position": "Defender",
+    "photo": "https://media.api-sports.io/football/players/384135.png"
+  },
+  {
+    "id": 179955,
+    "name": "Javi Rueda",
+    "age": 23,
+    "number": 17,
+    "position": "Defender",
+    "photo": "https://media.api-sports.io/football/players/179955.png"
+  },
+  {
+    "id": 47988,
+    "name": "C. Starfelt",
+    "age": 30,
+    "number": 2,
+    "position": "Defender",
+    "photo": "https://media.api-sports.io/football/players/47988.png"
+  },
+  {
+    "id": 481678,
+    "name": "Andrés Antañón",
+    "age": 18,
+    "number": 8,
+    "position": "Midfielder",
+    "photo": "https://media.api-sports.io/football/players/481678.png"
+  },
+  {
+    "id": 560930,
+    "name": "H. Burcio",
+    "age": 18,
+    "number": 5,
+    "position": "Midfielder",
+    "photo": "https://media.api-sports.io/football/players/560930.png"
+  },
+  {
+    "id": 182638,
+    "name": "Manu Fernández",
+    "age": 24,
+    "number": 12,
+    "position": "Midfielder",
+    "photo": "https://media.api-sports.io/football/players/182638.png"
+  },
+  {
+    "id": 161875,
+    "name": "Hugo González",
+    "age": 22,
+    "number": 7,
+    "position": "Midfielder",
+    "photo": "https://media.api-sports.io/football/players/161875.png"
+  },
+  {
+    "id": 391822,
+    "name": "Fer López",
+    "age": 21,
+    "number": 8,
+    "position": "Midfielder",
+    "photo": "https://media.api-sports.io/football/players/391822.png"
+  },
+  {
+    "id": 554286,
+    "name": "O. Marcos",
+    "age": 19,
+    "number": 19,
+    "position": "Midfielder",
+    "photo": "https://media.api-sports.io/football/players/554286.png"
+  },
+  {
+    "id": 162123,
+    "name": "I. Moriba",
+    "age": 22,
+    "number": 6,
+    "position": "Midfielder",
+    "photo": "https://media.api-sports.io/football/players/162123.png"
+  },
+  {
+    "id": 333502,
+    "name": "Miguel Román",
+    "age": 23,
+    "number": 17,
+    "position": "Midfielder",
+    "photo": "https://media.api-sports.io/football/players/333502.png"
+  },
+  {
+    "id": 313651,
+    "name": "Hugo Sotelo",
+    "age": 22,
+    "number": 22,
+    "position": "Midfielder",
+    "photo": "https://media.api-sports.io/football/players/313651.png"
+  },
+  {
+    "id": 211,
+    "name": "M. Vecino",
+    "age": 34,
+    "number": 15,
+    "position": "Midfielder",
+    "photo": "https://media.api-sports.io/football/players/211.png"
+  },
+  {
+    "id": 329720,
+    "name": "Hugo Álvarez",
+    "age": 22,
+    "number": 23,
+    "position": "Attacker",
+    "photo": "https://media.api-sports.io/football/players/329720.png"
+  },
+  {
+    "id": 47445,
+    "name": "Iago Aspas",
+    "age": 38,
+    "number": 10,
+    "position": "Attacker",
+    "photo": "https://media.api-sports.io/football/players/47445.png"
+  },
+  {
+    "id": 570,
+    "name": "F. Cervi",
+    "age": 31,
+    "number": 11,
+    "position": "Attacker",
+    "photo": "https://media.api-sports.io/football/players/570.png"
+  },
+  {
+    "id": 320517,
+    "name": "Pablo Durán",
+    "age": 24,
+    "number": 18,
+    "position": "Attacker",
+    "photo": "https://media.api-sports.io/football/players/320517.png"
+  },
+  {
+    "id": 351913,
+    "name": "J. El Abdellaoui",
+    "age": 19,
+    "number": 39,
+    "position": "Attacker",
+    "photo": "https://media.api-sports.io/football/players/351913.png"
+  },
+  {
+    "id": 47348,
+    "name": "Borja Iglesias",
+    "age": 32,
+    "number": 7,
+    "position": "Attacker",
+    "photo": "https://media.api-sports.io/football/players/47348.png"
+  },
+  {
+    "id": 122734,
+    "name": "Ferran Jutglà",
+    "age": 26,
+    "number": 9,
+    "position": "Attacker",
+    "photo": "https://media.api-sports.io/football/players/122734.png"
+  },
+  {
+    "id": 269163,
+    "name": "W. Swedberg",
+    "age": 21,
+    "number": 19,
+    "position": "Attacker",
+    "photo": "https://media.api-sports.io/football/players/269163.png"
+  }
+]

@@ -1,0 +1,242 @@
+[
+  {
+    "id": 22221,
+    "name": "M. Maignan",
+    "age": 30,
+    "number": 16,
+    "position": "Goalkeeper",
+    "photo": "https://media.api-sports.io/football/players/22221.png"
+  },
+  {
+    "id": 484293,
+    "name": "M. Pittarella",
+    "age": 17,
+    "number": 37,
+    "position": "Goalkeeper",
+    "photo": "https://media.api-sports.io/football/players/484293.png"
+  },
+  {
+    "id": 30394,
+    "name": "P. Terracciano",
+    "age": 35,
+    "number": 1,
+    "position": "Goalkeeper",
+    "photo": "https://media.api-sports.io/football/players/30394.png"
+  },
+  {
+    "id": 386298,
+    "name": "L. Torriani",
+    "age": 20,
+    "number": 96,
+    "position": "Goalkeeper",
+    "photo": "https://media.api-sports.io/football/players/386298.png"
+  },
+  {
+    "id": 396380,
+    "name": "Z. Athekame",
+    "age": 21,
+    "number": 24,
+    "position": "Defender",
+    "photo": "https://media.api-sports.io/football/players/396380.png"
+  },
+  {
+    "id": 374359,
+    "name": "D. Bartesaghi",
+    "age": 20,
+    "number": 33,
+    "position": "Defender",
+    "photo": "https://media.api-sports.io/football/players/374359.png"
+  },
+  {
+    "id": 162141,
+    "name": "K. De Winter",
+    "age": 23,
+    "number": 5,
+    "position": "Defender",
+    "photo": "https://media.api-sports.io/football/players/162141.png"
+  },
+  {
+    "id": 46731,
+    "name": "P. Estupiñán",
+    "age": 27,
+    "number": 2,
+    "position": "Defender",
+    "photo": "https://media.api-sports.io/football/players/46731.png"
+  },
+  {
+    "id": 56473,
+    "name": "M. Gabbia",
+    "age": 26,
+    "number": 46,
+    "position": "Defender",
+    "photo": "https://media.api-sports.io/football/players/56473.png"
+  },
+  {
+    "id": 394740,
+    "name": "D. Odogu",
+    "age": 19,
+    "number": 27,
+    "position": "Defender",
+    "photo": "https://media.api-sports.io/football/players/394740.png"
+  },
+  {
+    "id": 45826,
+    "name": "S. Pavlović",
+    "age": 24,
+    "number": 31,
+    "position": "Defender",
+    "photo": "https://media.api-sports.io/football/players/45826.png"
+  },
+  {
+    "id": 19209,
+    "name": "F. Tomori",
+    "age": 28,
+    "number": 23,
+    "position": "Defender",
+    "photo": "https://media.api-sports.io/football/players/19209.png"
+  },
+  {
+    "id": 496790,
+    "name": "V. Vladimirov",
+    "age": 17,
+    "number": 34,
+    "position": "Defender",
+    "photo": "https://media.api-sports.io/football/players/496790.png"
+  },
+  {
+    "id": 22254,
+    "name": "Y. Fofana",
+    "age": 26,
+    "number": 19,
+    "position": "Midfielder",
+    "photo": "https://media.api-sports.io/football/players/22254.png"
+  },
+  {
+    "id": 264705,
+    "name": "A. Jashari",
+    "age": 23,
+    "number": 30,
+    "position": "Midfielder",
+    "photo": "https://media.api-sports.io/football/players/264705.png"
+  },
+  {
+    "id": 2292,
+    "name": "R. Loftus-Cheek",
+    "age": 29,
+    "number": 8,
+    "position": "Midfielder",
+    "photo": "https://media.api-sports.io/football/players/2292.png"
+  },
+  {
+    "id": 754,
+    "name": "L. Modrić",
+    "age": 40,
+    "number": 14,
+    "position": "Midfielder",
+    "photo": "https://media.api-sports.io/football/players/754.png"
+  },
+  {
+    "id": 272,
+    "name": "A. Rabiot",
+    "age": 30,
+    "number": 12,
+    "position": "Midfielder",
+    "photo": "https://media.api-sports.io/football/players/272.png"
+  },
+  {
+    "id": 31056,
+    "name": "S. Ricci",
+    "age": 24,
+    "number": 4,
+    "position": "Midfielder",
+    "photo": "https://media.api-sports.io/football/players/31056.png"
+  },
+  {
+    "id": 1417,
+    "name": "A. Saelemaekers",
+    "age": 26,
+    "number": 56,
+    "position": "Midfielder",
+    "photo": "https://media.api-sports.io/football/players/1417.png"
+  },
+  {
+    "id": 554588,
+    "name": "E. Sala",
+    "age": 17,
+    "number": 42,
+    "position": "Midfielder",
+    "photo": "https://media.api-sports.io/football/players/554588.png"
+  },
+  {
+    "id": 448968,
+    "name": "J. Sardo",
+    "age": 20,
+    "number": 45,
+    "position": "Midfielder",
+    "photo": "https://media.api-sports.io/football/players/448968.png"
+  },
+  {
+    "id": 336928,
+    "name": "M. Valletta",
+    "age": 31,
+    "number": 25,
+    "position": "Attacker",
+    "photo": "https://media.api-sports.io/football/players/336928.png"
+  },
+  {
+    "id": 582073,
+    "name": "E. Borsani",
+    "age": 17,
+    "number": 35,
+    "position": "Attacker",
+    "photo": "https://media.api-sports.io/football/players/582073.png"
+  },
+  {
+    "id": 598671,
+    "name": "A. Castiello",
+    "age": 18,
+    "number": 80,
+    "position": "Attacker",
+    "photo": "https://media.api-sports.io/football/players/598671.png"
+  },
+  {
+    "id": 25391,
+    "name": "N. Füllkrug",
+    "age": 32,
+    "number": 9,
+    "position": "Attacker",
+    "photo": "https://media.api-sports.io/football/players/25391.png"
+  },
+  {
+    "id": 94562,
+    "name": "S. Giménez",
+    "age": 24,
+    "number": 7,
+    "position": "Attacker",
+    "photo": "https://media.api-sports.io/football/players/94562.png"
+  },
+  {
+    "id": 22236,
+    "name": "Rafael Leão",
+    "age": 26,
+    "number": 10,
+    "position": "Attacker",
+    "photo": "https://media.api-sports.io/football/players/22236.png"
+  },
+  {
+    "id": 269,
+    "name": "C. Nkunku",
+    "age": 28,
+    "number": 18,
+    "position": "Attacker",
+    "photo": "https://media.api-sports.io/football/players/269.png"
+  },
+  {
+    "id": 17,
+    "name": "C. Pulišić",
+    "age": 27,
+    "number": 11,
+    "position": "Attacker",
+    "photo": "https://media.api-sports.io/football/players/17.png"
+  }
+]

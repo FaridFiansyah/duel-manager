@@ -1,0 +1,250 @@
+[
+  {
+    "id": 46698,
+    "name": "José Caro",
+    "age": 31,
+    "number": 13,
+    "position": "Goalkeeper",
+    "photo": "https://media.api-sports.io/football/players/46698.png"
+  },
+  {
+    "id": 1304,
+    "name": "D. Horkaš",
+    "age": 26,
+    "number": 1,
+    "position": "Goalkeeper",
+    "photo": "https://media.api-sports.io/football/players/1304.png"
+  },
+  {
+    "id": 440748,
+    "name": "Ãlvaro Killane",
+    "age": 21,
+    "number": 30,
+    "position": "Goalkeeper",
+    "photo": "https://media.api-sports.io/football/players/440748.png"
+  },
+  {
+    "id": 443146,
+    "name": "Adrián Suárez",
+    "age": 20,
+    "number": 35,
+    "position": "Goalkeeper",
+    "photo": "https://media.api-sports.io/football/players/443146.png"
+  },
+  {
+    "id": 651608,
+    "name": "V. Alegre",
+    "age": 22,
+    "number": 42,
+    "position": "Defender",
+    "photo": "https://media.api-sports.io/football/players/651608.png"
+  },
+  {
+    "id": 131535,
+    "name": "Álex Suárez",
+    "age": 32,
+    "number": 4,
+    "position": "Defender",
+    "photo": "https://media.api-sports.io/football/players/131535.png"
+  },
+  {
+    "id": 131529,
+    "name": "Enrique Clemente",
+    "age": 26,
+    "number": 5,
+    "position": "Defender",
+    "photo": "https://media.api-sports.io/football/players/131529.png"
+  },
+  {
+    "id": 122230,
+    "name": "Manu Fuster",
+    "age": 28,
+    "number": 14,
+    "position": "Midfielder",
+    "photo": "https://media.api-sports.io/football/players/122230.png"
+  },
+  {
+    "id": 137441,
+    "name": "Cristian Gutiérrez",
+    "age": 25,
+    "number": 23,
+    "position": "Defender",
+    "photo": "https://media.api-sports.io/football/players/137441.png"
+  },
+  {
+    "id": 431890,
+    "name": "Juan Herzog",
+    "age": 21,
+    "number": 15,
+    "position": "Defender",
+    "photo": "https://media.api-sports.io/football/players/431890.png"
+  },
+  {
+    "id": 162475,
+    "name": "Mika Màrmol",
+    "age": 24,
+    "number": 3,
+    "position": "Defender",
+    "photo": "https://media.api-sports.io/football/players/162475.png"
+  },
+  {
+    "id": 162026,
+    "name": "Marvin Park",
+    "age": 25,
+    "number": 2,
+    "position": "Defender",
+    "photo": "https://media.api-sports.io/football/players/162026.png"
+  },
+  {
+    "id": 609685,
+    "name": "C. Navarro",
+    "age": null,
+    "number": 31,
+    "position": "Defender",
+    "photo": "https://media.api-sports.io/football/players/609685.png"
+  },
+  {
+    "id": 481993,
+    "name": "Valentín Pezzolesi",
+    "age": 18,
+    "number": 27,
+    "position": "Defender",
+    "photo": "https://media.api-sports.io/football/players/481993.png"
+  },
+  {
+    "id": 182857,
+    "name": "Sergio Barcia",
+    "age": 25,
+    "number": 6,
+    "position": "Defender",
+    "photo": "https://media.api-sports.io/football/players/182857.png"
+  },
+  {
+    "id": 346865,
+    "name": "L. Amatucci",
+    "age": 21,
+    "number": 16,
+    "position": "Midfielder",
+    "photo": "https://media.api-sports.io/football/players/346865.png"
+  },
+  {
+    "id": 35589,
+    "name": "N. Benedetti",
+    "age": 28,
+    "number": 7,
+    "position": "Midfielder",
+    "photo": "https://media.api-sports.io/football/players/35589.png"
+  },
+  {
+    "id": 182694,
+    "name": "Iván Gil",
+    "age": 25,
+    "number": 8,
+    "position": "Midfielder",
+    "photo": "https://media.api-sports.io/football/players/182694.png"
+  },
+  {
+    "id": 297869,
+    "name": "Iñaki González Zambrano",
+    "age": 21,
+    "number": 26,
+    "position": "Midfielder",
+    "photo": "https://media.api-sports.io/football/players/297869.png"
+  },
+  {
+    "id": 21709,
+    "name": "E. Loiodice",
+    "age": 25,
+    "number": 12,
+    "position": "Midfielder",
+    "photo": "https://media.api-sports.io/football/players/21709.png"
+  },
+  {
+    "id": 157194,
+    "name": "Pejiño",
+    "age": 29,
+    "number": 24,
+    "position": "Attacker",
+    "photo": "https://media.api-sports.io/football/players/157194.png"
+  },
+  {
+    "id": 70315,
+    "name": "Kirian Rodríguez",
+    "age": 29,
+    "number": 20,
+    "position": "Midfielder",
+    "photo": "https://media.api-sports.io/football/players/70315.png"
+  },
+  {
+    "id": 12667,
+    "name": "Jonathan Viera",
+    "age": 36,
+    "number": 21,
+    "position": "Attacker",
+    "photo": "https://media.api-sports.io/football/players/12667.png"
+  },
+  {
+    "id": 330599,
+    "name": "Iker Bravo",
+    "age": 20,
+    "number": 49,
+    "position": "Attacker",
+    "photo": "https://media.api-sports.io/football/players/330599.png"
+  },
+  {
+    "id": 330361,
+    "name": "Ale García",
+    "age": 22,
+    "number": 22,
+    "position": "Attacker",
+    "photo": "https://media.api-sports.io/football/players/330361.png"
+  },
+  {
+    "id": 1585,
+    "name": "Jesé",
+    "age": 32,
+    "number": 10,
+    "position": "Attacker",
+    "photo": "https://media.api-sports.io/football/players/1585.png"
+  },
+  {
+    "id": 601690,
+    "name": "I. Medina",
+    "age": 21,
+    "number": 38,
+    "position": "Attacker",
+    "photo": "https://media.api-sports.io/football/players/601690.png"
+  },
+  {
+    "id": 32972,
+    "name": "T. Miyashiro",
+    "age": 25,
+    "number": 18,
+    "position": "Midfielder",
+    "photo": "https://media.api-sports.io/football/players/32972.png"
+  },
+  {
+    "id": 336555,
+    "name": "Estanis",
+    "age": 22,
+    "number": 39,
+    "position": "Midfielder",
+    "photo": "https://media.api-sports.io/football/players/336555.png"
+  },
+  {
+    "id": 47324,
+    "name": "Sandro Ramírez",
+    "age": 30,
+    "number": 19,
+    "position": "Attacker",
+    "photo": "https://media.api-sports.io/football/players/47324.png"
+  },
+  {
+    "id": 46854,
+    "name": "Viti Rozada",
+    "age": 28,
+    "number": 17,
+    "position": "Attacker",
+    "photo": "https://media.api-sports.io/football/players/46854.png"
+  }
+]

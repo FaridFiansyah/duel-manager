@@ -1,0 +1,250 @@
+[
+  {
+    "id": 543468,
+    "name": "Eder Aller",
+    "age": 18,
+    "number": 33,
+    "position": "Goalkeeper",
+    "photo": "https://media.api-sports.io/football/players/543468.png"
+  },
+  {
+    "id": 182718,
+    "name": "Joan García",
+    "age": 24,
+    "number": 13,
+    "position": "Goalkeeper",
+    "photo": "https://media.api-sports.io/football/players/182718.png"
+  },
+  {
+    "id": 383647,
+    "name": "D. Kochen",
+    "age": 19,
+    "number": 31,
+    "position": "Goalkeeper",
+    "photo": "https://media.api-sports.io/football/players/383647.png"
+  },
+  {
+    "id": 851,
+    "name": "W. Szczęsny",
+    "age": 35,
+    "number": 25,
+    "position": "Goalkeeper",
+    "photo": "https://media.api-sports.io/football/players/851.png"
+  },
+  {
+    "id": 101814,
+    "name": "R. Araújo",
+    "age": 26,
+    "number": 4,
+    "position": "Defender",
+    "photo": "https://media.api-sports.io/football/players/101814.png"
+  },
+  {
+    "id": 161928,
+    "name": "Alejandro Balde",
+    "age": 22,
+    "number": 3,
+    "position": "Defender",
+    "photo": "https://media.api-sports.io/football/players/161928.png"
+  },
+  {
+    "id": 855,
+    "name": "João Cancelo",
+    "age": 31,
+    "number": 2,
+    "position": "Defender",
+    "photo": "https://media.api-sports.io/football/players/855.png"
+  },
+  {
+    "id": 2282,
+    "name": "A. Christensen",
+    "age": 29,
+    "number": 15,
+    "position": "Defender",
+    "photo": "https://media.api-sports.io/football/players/2282.png"
+  },
+  {
+    "id": 433395,
+    "name": "Álvaro Cortés Moyano",
+    "age": 20,
+    "number": 36,
+    "position": "Defender",
+    "photo": "https://media.api-sports.io/football/players/433395.png"
+  },
+  {
+    "id": 396623,
+    "name": "Pau Cubarsí Paredes",
+    "age": 18,
+    "number": 5,
+    "position": "Defender",
+    "photo": "https://media.api-sports.io/football/players/396623.png"
+  },
+  {
+    "id": 568001,
+    "name": "X. Espart",
+    "age": 18,
+    "number": 42,
+    "position": "Defender",
+    "photo": "https://media.api-sports.io/football/players/568001.png"
+  },
+  {
+    "id": 619,
+    "name": "Eric García",
+    "age": 24,
+    "number": 24,
+    "position": "Defender",
+    "photo": "https://media.api-sports.io/football/players/619.png"
+  },
+  {
+    "id": 1257,
+    "name": "J. Koundé",
+    "age": 27,
+    "number": 23,
+    "position": "Defender",
+    "photo": "https://media.api-sports.io/football/players/1257.png"
+  },
+  {
+    "id": 181701,
+    "name": "Gerard Martín",
+    "age": 23,
+    "number": 18,
+    "position": "Defender",
+    "photo": "https://media.api-sports.io/football/players/181701.png"
+  },
+  {
+    "id": 491250,
+    "name": "Jofre Torrents",
+    "age": 18,
+    "number": 26,
+    "position": "Defender",
+    "photo": "https://media.api-sports.io/football/players/491250.png"
+  },
+  {
+    "id": 433396,
+    "name": "Marc Bernal",
+    "age": 18,
+    "number": 22,
+    "position": "Midfielder",
+    "photo": "https://media.api-sports.io/football/players/433396.png"
+  },
+  {
+    "id": 329728,
+    "name": "Marc Casadó",
+    "age": 22,
+    "number": 17,
+    "position": "Midfielder",
+    "photo": "https://media.api-sports.io/football/players/329728.png"
+  },
+  {
+    "id": 340626,
+    "name": "Fermín",
+    "age": 22,
+    "number": 16,
+    "position": "Midfielder",
+    "photo": "https://media.api-sports.io/football/players/340626.png"
+  },
+  {
+    "id": 296667,
+    "name": "Gavi",
+    "age": 21,
+    "number": 6,
+    "position": "Midfielder",
+    "photo": "https://media.api-sports.io/football/players/296667.png"
+  },
+  {
+    "id": 491086,
+    "name": "Tomás Marqués",
+    "age": 19,
+    "number": 43,
+    "position": "Midfielder",
+    "photo": "https://media.api-sports.io/football/players/491086.png"
+  },
+  {
+    "id": 1323,
+    "name": "Dani Olmo",
+    "age": 27,
+    "number": 20,
+    "position": "Midfielder",
+    "photo": "https://media.api-sports.io/football/players/1323.png"
+  },
+  {
+    "id": 133609,
+    "name": "Pedri",
+    "age": 23,
+    "number": 8,
+    "position": "Midfielder",
+    "photo": "https://media.api-sports.io/football/players/133609.png"
+  },
+  {
+    "id": 538,
+    "name": "F. de Jong",
+    "age": 28,
+    "number": 21,
+    "position": "Midfielder",
+    "photo": "https://media.api-sports.io/football/players/538.png"
+  },
+  {
+    "id": 338958,
+    "name": "R. Bardghji",
+    "age": 20,
+    "number": 19,
+    "position": "Attacker",
+    "photo": "https://media.api-sports.io/football/players/338958.png"
+  },
+  {
+    "id": 445973,
+    "name": "Toni Fernández",
+    "age": 17,
+    "number": 29,
+    "position": "Attacker",
+    "photo": "https://media.api-sports.io/football/players/445973.png"
+  },
+  {
+    "id": 579244,
+    "name": "Juan Hernández",
+    "age": 18,
+    "number": 41,
+    "position": "Attacker",
+    "photo": "https://media.api-sports.io/football/players/579244.png"
+  },
+  {
+    "id": 386828,
+    "name": "Lamine Yamal",
+    "age": 18,
+    "number": 10,
+    "position": "Attacker",
+    "photo": "https://media.api-sports.io/football/players/386828.png"
+  },
+  {
+    "id": 521,
+    "name": "R. Lewandowski",
+    "age": 37,
+    "number": 9,
+    "position": "Attacker",
+    "photo": "https://media.api-sports.io/football/players/521.png"
+  },
+  {
+    "id": 1496,
+    "name": "Raphinha",
+    "age": 29,
+    "number": 11,
+    "position": "Attacker",
+    "photo": "https://media.api-sports.io/football/players/1496.png"
+  },
+  {
+    "id": 909,
+    "name": "M. Rashford",
+    "age": 28,
+    "number": 14,
+    "position": "Attacker",
+    "photo": "https://media.api-sports.io/football/players/909.png"
+  },
+  {
+    "id": 931,
+    "name": "Ferran Torres",
+    "age": 25,
+    "number": 7,
+    "position": "Attacker",
+    "photo": "https://media.api-sports.io/football/players/931.png"
+  }
+]
