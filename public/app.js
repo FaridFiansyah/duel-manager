@@ -524,53 +524,142 @@ async function simulateMatch() {
   await updateRoom({ result, status: 'playing', updatedAt: Date.now() });
 }
 
-function generateMatchEvents(A, B, nameA, nameB) {
-  const powerA = teamPower(A);
-  const powerB = teamPower(B);
-  const diff = powerA - powerB;
-  const baseA = 1.15 + diff / 30 + Math.random() * 1.4;
-  const baseB = 1.15 - diff / 30 + Math.random() * 1.4;
-  const scoreA = clamp(Math.round(baseA + Math.random()), 0, 6);
-  const scoreB = clamp(Math.round(baseB + Math.random()), 0, 6);
-  const winner = scoreA === scoreB ? 'Draw' : (scoreA > scoreB ? nameA : nameB);
+function applyChemistry(team) {
+  const clubs = {};
+  const countries = {};
+  team.forEach(p => {
+    clubs[p.club] = (clubs[p.club] || 0) + 1;
+    countries[p.country] = (countries[p.country] || 0) + 1;
+  });
+  
+  return team.map(p => {
+    let boost = 0;
+    if (clubs[p.club] >= 4) boost += 2;
+    else if (clubs[p.club] >= 2) boost += 1;
+    
+    if (countries[p.country] >= 4) boost += 2;
+    else if (countries[p.country] >= 2) boost += 1;
+    
+    return { ...p, effRating: p.rating + boost };
+  });
+}
+
+function getLinePower(team, pos) {
+  const players = team.filter(p => p.position === pos);
+  if (!players.length) return 50; 
+  const avg = players.reduce((s, p) => s + p.effRating, 0) / players.length;
+  return avg + (players.length * 2); 
+}
+
+function generateMatchEvents(teamA, teamB, nameA, nameB) {
+  const A = applyChemistry(teamA);
+  const B = applyChemistry(teamB);
   
   const events = [];
-  let shotsA = scoreA + Math.floor(Math.random() * 6);
-  let shotsB = scoreB + Math.floor(Math.random() * 6);
+  let scoreA = 0;
+  let scoreB = 0;
+  
+  const midA_base = getLinePower(A, 'MID');
+  const midB_base = getLinePower(B, 'MID');
+  const attA_base = getLinePower(A, 'FWD');
+  const attB_base = getLinePower(B, 'FWD');
+  const defA_base = getLinePower(A, 'DEF');
+  const defB_base = getLinePower(B, 'DEF');
+  
+  const getGk = (team) => team.find(p => p.position === 'GK') || { name: 'Kiper Darurat', effRating: 50, trait: '' };
+  const gkA = getGk(A);
+  const gkB = getGk(B);
 
-  for (let i = 0; i < scoreA; i++) {
-    const min = Math.floor(Math.random() * 90) + 1;
-    const scorer = A[Math.floor(Math.random() * A.length)]?.name || 'Pemain A';
-    events.push({ min, team: 'A', type: 'goal', msg: `GOAL! ${scorer} merobek gawang!` });
-  }
-  for (let i = 0; i < scoreB; i++) {
-    const min = Math.floor(Math.random() * 90) + 1;
-    const scorer = B[Math.floor(Math.random() * B.length)]?.name || 'Pemain B';
-    events.push({ min, team: 'B', type: 'goal', msg: `GOAL! ${scorer} memecah kebuntuan!` });
+  const getFatigue = (min) => 1.0 - ((min / 90) * 0.2); // Turun ke 80% di menit 90
+
+  for (let min = 1; min <= 90; min++) {
+    const fatigue = getFatigue(min);
+    
+    const playmA = A.some(p => p.trait === 'Playmaker' || p.trait === 'Box-to-Box') ? 4 : 0;
+    const playmB = B.some(p => p.trait === 'Playmaker' || p.trait === 'Box-to-Box') ? 4 : 0;
+    
+    const midA = (midA_base + playmA) * fatigue;
+    const midB = (midB_base + playmB) * fatigue;
+    
+    const totalMid = midA + midB;
+    const chanceA = (midA / totalMid) * 100;
+    const rollPossession = Math.random() * 100;
+    
+    const attackingTeam = rollPossession <= chanceA ? 'A' : 'B';
+    const defTeam = attackingTeam === 'A' ? 'B' : 'A';
+    
+    let attPower = attackingTeam === 'A' ? attA_base : attB_base;
+    let defPower = attackingTeam === 'A' ? defB_base : defA_base;
+    
+    const defTeamObj = attackingTeam === 'A' ? B : A;
+    if (defTeamObj.some(p => p.trait === 'Tackler' || p.trait === 'Aerial Wall')) {
+      defPower += 4;
+    }
+    
+    attPower *= fatigue;
+    defPower *= fatigue;
+    
+    const diff = attPower - defPower;
+    const attackChance = Math.max(5, Math.min(45, 15 + (diff * 1.5))); 
+    
+    const rollAttack = Math.random() * 100;
+    if (rollAttack <= attackChance) {
+      const attackers = attackingTeam === 'A' ? A : B;
+      
+      let fwds = attackers.filter(p => p.position === 'FWD');
+      if (!fwds.length) fwds = attackers.filter(p => p.position === 'MID');
+      if (!fwds.length) fwds = attackers;
+      const shooter = fwds[Math.floor(Math.random() * fwds.length)];
+      
+      const gk = attackingTeam === 'A' ? gkB : gkA;
+      
+      let shootChance = 35 + ((shooter.effRating - gk.effRating) * 1.5);
+      
+      if (shooter.trait === 'Poacher' || shooter.trait === 'Finisher') shootChance += 12;
+      if (gk.trait === 'Shot Stopper' || gk.trait === 'Reflex') shootChance -= 12;
+      if (min > 75) shootChance -= 5; // Extra fatigue penalty for late game finishing
+      
+      shootChance = Math.max(10, Math.min(90, shootChance));
+      const rollShoot = Math.random() * 100;
+      
+      let traitMsg = '';
+      if (shooter.trait === 'Poacher') traitMsg = '[Poacher] ';
+      if (shooter.trait === 'Finisher') traitMsg = '[Finisher] ';
+      
+      if (rollShoot <= shootChance) {
+        if (attackingTeam === 'A') scoreA++; else scoreB++;
+        events.push({ min, team: attackingTeam, type: 'goal', msg: `GOAL! ${traitMsg}${shooter.name} merobek gawang!` });
+      } else {
+        let saveMsg = `Tembakan ${shooter.name} masih bisa digagalkan kiper.`;
+        if (gk.trait === 'Shot Stopper' || gk.trait === 'Reflex') saveMsg = `[${gk.trait}] Penyelamatan gemilang dari ${gk.name}!`;
+        events.push({ min, team: attackingTeam, type: 'shot', msg: saveMsg });
+      }
+    } else {
+      const foulChance = 2.5; 
+      if (Math.random() * 100 <= foulChance) {
+        const penTaker = (attackingTeam === 'A' ? A : B).sort((a,b) => b.effRating - a.effRating)[0];
+        const gk = attackingTeam === 'A' ? gkB : gkA;
+        
+        let penChance = 75; 
+        if (gk.trait === 'Penalty Saver') penChance -= 20;
+        
+        events.push({ min, team: attackingTeam, type: 'foul', msg: `PELANGGARAN! Penalti untuk ${attackingTeam === 'A' ? nameA : nameB}!` });
+        
+        if (Math.random() * 100 <= penChance) {
+          if (attackingTeam === 'A') scoreA++; else scoreB++;
+          events.push({ min, team: attackingTeam, type: 'goal', msg: `GOAL PENALTI! Eksekusi dingin dari ${penTaker.name}.` });
+        } else {
+          let saveMsg = `GAGAL! Tendangan penalti ${penTaker.name} ditepis!`;
+          if (gk.trait === 'Penalty Saver') saveMsg = `[Penalty Saver] ${gk.name} membaca arah bola dan menepis penalti!`;
+          events.push({ min, team: attackingTeam, type: 'shot', msg: saveMsg });
+        }
+      }
+    }
   }
 
-  for (let i = 0; i < shotsA - scoreA; i++) {
-    const min = Math.floor(Math.random() * 90) + 1;
-    const shooter = A[Math.floor(Math.random() * A.length)]?.name || 'Pemain A';
-    events.push({ min, team: 'A', type: 'shot', msg: `Tembakan meleset dari ${shooter}.` });
-  }
-  for (let i = 0; i < shotsB - scoreB; i++) {
-    const min = Math.floor(Math.random() * 90) + 1;
-    const shooter = B[Math.floor(Math.random() * B.length)]?.name || 'Pemain B';
-    events.push({ min, team: 'B', type: 'shot', msg: `Peluang ${shooter} berhasil digagalkan kiper.` });
-  }
-
-  events.sort((a,b) => a.min - b.min);
-
+  const winner = scoreA === scoreB ? 'Draw' : (scoreA > scoreB ? nameA : nameB);
   return { finalScoreA: scoreA, finalScoreB: scoreB, events, winner, simulatedAt: Date.now() };
 }
-
-function teamPower(team) {
-  const avg = team.reduce((s,p)=>s+p.rating,0) / Math.max(1, team.length);
-  return avg + Math.random() * 3;
-}
-
-function clamp(n,min,max){return Math.max(min,Math.min(max,n));}
 
 function renderLobbyStats() {
   $('statPlayers').textContent = roster.length;
