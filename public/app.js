@@ -401,13 +401,19 @@ async function pickPlayer(playerId) {
   }
 
   const roomRef = fb.ref(fb.db, `rooms/${appState.code}`);
-  await fb.runTransaction(roomRef, (current) => {
-    if (!current || current.status !== 'draft') return current;
-    if (current.turn !== seat) return current;
-    current.teams ||= {A:{}, B:{}};
-    current.teams.A ||= {}; current.teams.B ||= {};
-    current.picked ||= {};
-    if (current.picked[playerId] || current.teams[seat][slotIdx]) return current;
+  try {
+    const snap = await fb.get(roomRef);
+    if (!snap.exists()) return;
+    const current = snap.val();
+    
+    if (current.status !== 'draft') return;
+    if (current.turn !== seat) return;
+    current.teams = current.teams || {A:{}, B:{}};
+    current.teams.A = current.teams.A || {}; 
+    current.teams.B = current.teams.B || {};
+    current.picked = current.picked || {};
+    
+    if (current.picked[playerId] || current.teams[seat][slotIdx]) return;
     
     current.teams[seat][slotIdx] = playerId;
     current.picked[playerId] = seat;
@@ -420,9 +426,13 @@ async function pickPlayer(playerId) {
       current.status = 'ready';
     }
     current.updatedAt = Date.now();
-    return current;
-  });
-  appState.activeSlot = null;
+    
+    await fb.update(roomRef, current);
+    appState.activeSlot = null;
+  } catch (err) {
+    console.error("Pick error:", err);
+    alert("Gagal melakukan pick. Periksa koneksi internet.");
+  }
 }
 
 function applyPickLocal(playerId, seat, slotIdx) {
