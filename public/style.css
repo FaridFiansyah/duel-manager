@@ -216,6 +216,36 @@ h2 { font-size: 2rem; color: var(--accent2); }
 .log-goal { color: var(--accent); font-weight: bold; }
 .log-goal::before { content: "⚽ " !important; }
 
+/* Toast Notifications */
+.toast-container {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  z-index: 1000;
+}
+.toast {
+  background: var(--bg);
+  border: 3px solid var(--line);
+  padding: 15px 20px;
+  color: var(--text);
+  font-family: monospace;
+  font-size: 1.1rem;
+  box-shadow: 6px 6px 0 var(--accent2);
+  animation: slideIn 0.3s ease-out forwards;
+}
+.toast .toast-title {
+  color: var(--accent);
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+@keyframes slideIn {
+  from { transform: translateX(100%); opacity: 0; }
+  to { transform: translateX(0); opacity: 1; }
+}
+
 @media (max-width: 1100px) {
   .draft-grid { grid-template-columns: 1fr; }
   .pitch { max-width: 400px; margin: 0 auto; }

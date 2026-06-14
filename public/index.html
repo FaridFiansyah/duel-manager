@@ -79,7 +79,7 @@
         </div>
 
         <section class="draft-grid">
-          <aside class="panel team-panel">
+          <aside id="teamAPanel" class="panel team-panel">
             <div class="section-head small">
               <div><p class="eyebrow">Manager A</p><h3 id="managerAName">-</h3><p id="managerAFormation" class="muted formation-label"></p></div>
               <span id="teamACount" class="pill">0/11</span>
@@ -139,7 +139,7 @@
             <div id="playerGrid" class="player-grid"></div>
           </section>
 
-          <aside class="panel team-panel">
+          <aside id="teamBPanel" class="panel team-panel">
             <div class="section-head small">
               <div><p class="eyebrow">Manager B</p><h3 id="managerBName">-</h3><p id="managerBFormation" class="muted formation-label"></p></div>
               <span id="teamBCount" class="pill">0/11</span>
@@ -167,6 +167,8 @@
       </div>
     </div>
   </div>
+
+  <div id="toastContainer" class="toast-container"></div>
 
   <script type="module" src="app.js"></script>
 </body>

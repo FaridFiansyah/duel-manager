@@ -161,26 +161,38 @@ function randomCode() {
 
 async function createOnlineRoom() {
   if (!fb) { setStatus('Firebase belum aktif.'); return; }
+  setStatus('Membuat room...');
   const code = randomCode();
   const room = newRoom(code, managerName(), '');
   room.mode = 'online';
   room.hostSeat = 'A';
-  await fb.set(fb.ref(fb.db, `rooms/${code}`), room);
-  enterRoom(code, 'A', false);
+  try {
+    await fb.set(fb.ref(fb.db, `rooms/${code}`), room);
+    enterRoom(code, 'A', false);
+  } catch (err) {
+    console.error("Firebase set error:", err);
+    setStatus('Gagal membuat room. Pastikan Firebase Security Rules diset ke true.');
+  }
 }
 
 async function joinOnlineRoom() {
   if (!fb) { setStatus('Firebase belum aktif.'); return; }
   const code = $('joinCodeInput').value.trim().toUpperCase();
   if (!/^[A-Z0-9]{5}$/.test(code)) { setStatus('Kode 5 karakter.'); return; }
-  const snap = await fb.get(fb.ref(fb.db, `rooms/${code}`));
-  if (!snap.exists()) { setStatus('Room tidak ada.'); return; }
-  const room = snap.val();
-  const seat = room.managers?.B ? 'SPECTATOR' : 'B';
-  if (seat === 'B') {
-    await fb.update(fb.ref(fb.db, `rooms/${code}`), { 'managers/B': managerName(), updatedAt: Date.now() });
+  setStatus('Mencari room...');
+  try {
+    const snap = await fb.get(fb.ref(fb.db, `rooms/${code}`));
+    if (!snap.exists()) { setStatus('Room tidak ada.'); return; }
+    const room = snap.val();
+    const seat = room.managers?.B ? 'SPECTATOR' : 'B';
+    if (seat === 'B') {
+      await fb.update(fb.ref(fb.db, `rooms/${code}`), { 'managers/B': managerName(), updatedAt: Date.now() });
+    }
+    enterRoom(code, seat, false);
+  } catch (err) {
+    console.error("Firebase get error:", err);
+    setStatus('Gagal join room. Pastikan Firebase Security Rules diset ke true.');
   }
-  enterRoom(code, seat, false);
 }
 
 function startOfflineRoom() {
@@ -216,7 +228,22 @@ function enterRoom(code, seat, offline) {
     const roomRef = fb.ref(fb.db, `rooms/${code}`);
     appState.unsubscribe = fb.onValue(roomRef, (snap) => {
       if (!snap.exists()) { setStatus('Room dihapus.'); leaveRoom(false); return; }
-      appState.room = snap.val();
+      const newRoom = snap.val();
+      
+      // Check for new picks from opponent
+      if (!appState.offline && appState.room && newRoom.status === 'draft') {
+        const oldPicked = appState.room.picked || {};
+        const newPicked = newRoom.picked || {};
+        const mySeat = appState.seat;
+        for (const pid in newPicked) {
+          if (!oldPicked[pid] && newPicked[pid] !== mySeat) {
+            const p = roster.find(x => x.id === pid);
+            if (p) showToast(`${newRoom.managers[newPicked[pid]]} mem-pick ${p.name} (${p.position})`);
+          }
+        }
+      }
+
+      appState.room = newRoom;
       checkFormationModal();
       renderAll();
     });
@@ -547,6 +574,23 @@ function renderHeader() {
 function renderTeams() {
   const room = appState.room;
   if (!room) return;
+
+  const panelA = $('teamAPanel');
+  const panelB = $('teamBPanel');
+  
+  if (!appState.offline && room.status === 'draft' && appState.seat !== 'SPECTATOR') {
+    if (appState.seat === 'A') {
+      panelA.style.display = 'block';
+      panelB.style.display = 'none';
+    } else if (appState.seat === 'B') {
+      panelA.style.display = 'none';
+      panelB.style.display = 'block';
+    }
+  } else {
+    panelA.style.display = 'block';
+    panelB.style.display = 'block';
+  }
+
   renderPitch('A', $('pitchA'), $('teamACount'));
   renderPitch('B', $('pitchB'), $('teamBCount'));
 }
