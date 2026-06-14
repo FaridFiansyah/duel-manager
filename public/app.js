@@ -196,6 +196,7 @@ async function joinOnlineRoom() {
     if (seat === 'B') {
       await fb.update(fb.ref(fb.db, `rooms/${code}`), { 'managers/B': myName, updatedAt: Date.now() });
     }
+    console.log(`[Join Room] Masuk sebagai seat: ${seat}`);
     enterRoom(code, seat, false);
   } catch (err) {
     console.error("Firebase get error:", err);
@@ -236,24 +237,35 @@ function enterRoom(code, seat, offline) {
     const roomRef = fb.ref(fb.db, `rooms/${code}`);
     appState.unsubscribe = fb.onValue(roomRef, (snap) => {
       if (!snap.exists()) { setStatus('Room dihapus.'); leaveRoom(false); return; }
+      const oldRoom = appState.room;
       const newRoom = snap.val();
       
-      // Check for new picks from opponent
-      if (!appState.offline && appState.room && newRoom.status === 'draft') {
-        const oldPicked = appState.room.picked || {};
-        const newPicked = newRoom.picked || {};
-        const mySeat = appState.seat;
-        for (const pid in newPicked) {
-          if (!oldPicked[pid] && newPicked[pid] !== mySeat) {
-            const p = roster.find(x => x.id === pid);
-            if (p) showToast(`${newRoom.managers[newPicked[pid]]} mem-pick ${p.name} (${p.position})`);
-          }
-        }
-      }
+      console.log(`[Firebase onValue] Status: ${newRoom.status}, Turn: ${newRoom.turn}, Seat: ${appState.seat}`);
 
       appState.room = newRoom;
+      
+      if (appState.activeSlot && !appState.activeSlot.startsWith(appState.seat + '-')) {
+        appState.activeSlot = null;
+      }
+
       checkFormationModal();
       renderAll();
+
+      try {
+        if (!appState.offline && oldRoom && newRoom.status === 'draft') {
+          const oldPicked = oldRoom.picked || {};
+          const newPicked = newRoom.picked || {};
+          const mySeat = appState.seat;
+          for (const pid in newPicked) {
+            if (!oldPicked[pid] && newPicked[pid] !== mySeat) {
+              const p = roster.find(x => x.id === pid);
+              if (p) showToast(`${newRoom.managers[newPicked[pid]]} mem-pick ${p.name} (${p.position})`);
+            }
+          }
+        }
+      } catch (err) {
+        console.error("Error processing toast:", err);
+      }
     });
   }
 }
@@ -401,19 +413,30 @@ async function pickPlayer(playerId) {
   }
 
   const roomRef = fb.ref(fb.db, `rooms/${appState.code}`);
-  try {
-    const snap = await fb.get(roomRef);
-    if (!snap.exists()) return;
-    const current = snap.val();
+  await fb.runTransaction(roomRef, (current) => {
+    if (!current) return current;
+    if (current.status !== 'draft') {
+      console.log("[Transaction] Ditolak: status bukan draft");
+      return current;
+    }
+    if (current.turn !== seat) {
+      console.log("[Transaction] Ditolak: bukan giliran seat", seat);
+      return current;
+    }
     
-    if (current.status !== 'draft') return;
-    if (current.turn !== seat) return;
     current.teams = current.teams || {A:{}, B:{}};
     current.teams.A = current.teams.A || {}; 
     current.teams.B = current.teams.B || {};
     current.picked = current.picked || {};
     
-    if (current.picked[playerId] || current.teams[seat][slotIdx]) return;
+    if (current.picked[playerId]) {
+      console.log("[Transaction] Ditolak: pemain sudah dipick");
+      return current;
+    }
+    if (current.teams[seat][slotIdx]) {
+      console.log("[Transaction] Ditolak: slot sudah terisi");
+      return current;
+    }
     
     current.teams[seat][slotIdx] = playerId;
     current.picked[playerId] = seat;
@@ -427,12 +450,9 @@ async function pickPlayer(playerId) {
     }
     current.updatedAt = Date.now();
     
-    await fb.update(roomRef, current);
-    appState.activeSlot = null;
-  } catch (err) {
-    console.error("Pick error:", err);
-    alert("Gagal melakukan pick. Periksa koneksi internet.");
-  }
+    return current;
+  });
+  appState.activeSlot = null;
 }
 
 function applyPickLocal(playerId, seat, slotIdx) {
@@ -592,7 +612,9 @@ function renderHeader() {
   const canStart = room.formations?.A && room.formations?.B && room.status === 'lobby';
   $('startDraftBtn').disabled = (!appState.offline && appState.seat !== 'A') || !canStart;
   $('simulateBtn').disabled = !room || room.status === 'playing' || room.status === 'complete' || Object.keys(room.teams?.A||{}).length < 11 || Object.keys(room.teams?.B||{}).length < 11;
-  $('autoPickBtn').disabled = !room || room.status !== 'draft' || (!appState.offline && appState.seat !== room.turn);
+  
+  const isMyTurn = (!appState.offline && appState.seat === room.turn) || (appState.offline && room.turn);
+  $('autoPickBtn').disabled = !room || room.status !== 'draft' || appState.seat === 'SPECTATOR' || !isMyTurn;
 }
 
 function renderTeams() {
@@ -664,16 +686,16 @@ function renderPitch(seat, container, countEl) {
   
   container.innerHTML = html;
   
-  // Attach click events
   container.querySelectorAll('.slot').forEach(el => {
-    el.addEventListener('click', () => {
-      if (!isMyTurn || room.status !== 'draft') return;
-      if (el.classList.contains('filled')) return;
-      
-      const slotId = el.dataset.slotid;
-      appState.activeSlot = appState.activeSlot === slotId ? null : slotId;
-      renderAll();
-    });
+    const slotId = el.dataset.slotid;
+    const isFilled = el.classList.contains('filled');
+    
+    if (isMyTurn && room.status === 'draft' && !isFilled) {
+      el.addEventListener('click', () => {
+        appState.activeSlot = appState.activeSlot === slotId ? null : slotId;
+        renderAll();
+      });
+    }
   });
 }
 
@@ -838,3 +860,25 @@ function copyCode() {
 function setStatus(msg) { $('lobbyStatus').textContent = msg; }
 function escapeHtml(s) { return String(s ?? '').replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c])); }
 function escapeAttr(s) { return escapeHtml(s).replace(/'/g, '&#39;'); }
+
+function showToast(msg) {
+  try {
+    let container = $('toastContainer');
+    if (!container) {
+      container = document.createElement('div');
+      container.id = 'toastContainer';
+      container.className = 'toast-container';
+      document.body.appendChild(container);
+    }
+    const toast = document.createElement('div');
+    toast.className = 'toast';
+    toast.innerHTML = `<div class="toast-title">Pick Lawan</div>${msg}`;
+    container.appendChild(toast);
+    console.log("[Toast]", msg);
+    setTimeout(() => { if (toast.parentNode) toast.remove(); }, 2000);
+  } catch (err) {
+    console.error("Toast error:", err);
+  }
+}
+
+document.addEventListener('DOMContentLoaded', init);
